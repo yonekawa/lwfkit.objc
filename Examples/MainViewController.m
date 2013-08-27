@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "LKView.h"
 
 @interface MainViewController ()
 
@@ -18,6 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+
+    LKView *lwf = [[LKView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [lwf load:@"example.lwf" prefix:@"example.lwfdata" completed:nil];
+    [self.view addSubview:lwf];
 }
 
 - (void)didReceiveMemoryWarning

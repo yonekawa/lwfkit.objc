@@ -9,12 +9,12 @@
 #import "LKView.h"
 
 static NSString * const kLKScriptsFolder = @"Scripts/";
-static NSString * const kLKLoadLWFScript = @"";
+
+static NSString * const kLKLWFScript = @"lwf.js";
+static NSString * const kLKMainScript = @"main.js";
+static NSString * const kLKLoadLWFScript = @"load.js";
 
 static NSString * const kLKCallbackOnLoad = @"onload";
-
-@interface LKView()
-@end
 
 @implementation LKView
 
@@ -32,13 +32,18 @@ static NSString * const kLKCallbackOnLoad = @"onload";
 {
     self = [super initWithFrame:frame appFolder:folder];
     if (self) {
+        [self loadScriptAtPath:kLKLWFScript];
+        [self loadScriptAtPath:kLKMainScript];
     }
     return self;
 }
 
-- (void)load:(NSString *)lwf completed:(void (^)())completed;
+- (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed
 {
-    [self evaluateScript:kLKLoadLWFScript];
+    NSString *path = [self pathForResource:kLKLoadLWFScript];
+    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *script = [NSString stringWithFormat:format, lwf, prefix];
+    [self evaluateScript:script sourceURL:kLKLoadLWFScript];
 }
 
 - (void)gotoAndPlayWithFrameLabel:(NSString *)label

@@ -83,11 +83,13 @@
 		A41AA32D17CCBE6C003DAE81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D83E17CCB879009CB1B8 /* InfoPlist.strings */; };
 		A41AA33417CCC15A003DAE81 /* LKView.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA33317CCC15A003DAE81 /* LKView.m */; };
 		A41AA33517CCC15A003DAE81 /* LKView.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA33317CCC15A003DAE81 /* LKView.m */; };
-		A41AA33717CCC2CE003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA33617CCC2CE003DAE81 /* Scripts */; };
-		A41AA33817CCC2CE003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA33617CCC2CE003DAE81 /* Scripts */; };
+		A41AA33717CCC2CE003DAE81 /* App in Resources */ = {isa = PBXBuildFile; fileRef = A41AA33617CCC2CE003DAE81 /* App */; };
+		A41AA33817CCC2CE003DAE81 /* App in Resources */ = {isa = PBXBuildFile; fileRef = A41AA33617CCC2CE003DAE81 /* App */; };
 		A41AA33B17CCC3A7003DAE81 /* LKViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA33A17CCC3A7003DAE81 /* LKViewTest.m */; };
 		A41AA33C17CCC48E003DAE81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
 		A41AA33D17CCC49B003DAE81 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */; };
+		A41AA34417CCCA3D003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA34317CCCA3D003DAE81 /* Scripts */; };
+		A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D64017CCB679009CB1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D63F17CCB679009CB1B8 /* UIKit.framework */; };
 		A4B7D64217CCB679009CB1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64117CCB679009CB1B8 /* Foundation.framework */; };
 		A4B7D64417CCB679009CB1B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
@@ -307,9 +309,12 @@
 		A41AA32B17CCBDBB003DAE81 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		A41AA33217CCC15A003DAE81 /* LKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKView.h; sourceTree = "<group>"; };
 		A41AA33317CCC15A003DAE81 /* LKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKView.m; sourceTree = "<group>"; };
-		A41AA33617CCC2CE003DAE81 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		A41AA33617CCC2CE003DAE81 /* App */ = {isa = PBXFileReference; lastKnownFileType = folder; path = App; sourceTree = "<group>"; };
 		A41AA33917CCC3A7003DAE81 /* LKViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKViewTest.h; sourceTree = "<group>"; };
 		A41AA33A17CCC3A7003DAE81 /* LKViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKViewTest.m; sourceTree = "<group>"; };
+		A41AA34317CCCA3D003DAE81 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		A41AA34517CCD0C4003DAE81 /* EJBindingLocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLocalStorage.h; sourceTree = "<group>"; };
+		A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLocalStorage.m; sourceTree = "<group>"; };
 		A4B7D63C17CCB679009CB1B8 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B7D63F17CCB679009CB1B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4B7D64117CCB679009CB1B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -683,7 +688,7 @@
 		A4B7D63317CCB679009CB1B8 = {
 			isa = PBXGroup;
 			children = (
-				A41AA33617CCC2CE003DAE81 /* Scripts */,
+				A41AA33617CCC2CE003DAE81 /* App */,
 				A4B7D68917CCB7CF009CB1B8 /* LWFKit */,
 				A4B7D67A17CCB7CF009CB1B8 /* Examples */,
 				A4B7D72417CCB7CF009CB1B8 /* Tests */,
@@ -743,6 +748,7 @@
 		A4B7D68917CCB7CF009CB1B8 /* LWFKit */ = {
 			isa = PBXGroup;
 			children = (
+				A41AA34317CCCA3D003DAE81 /* Scripts */,
 				A41AA32E17CCC050003DAE81 /* Views */,
 				A4B7D68A17CCB7CF009CB1B8 /* Externals */,
 			);
@@ -907,6 +913,8 @@
 		A4B7D6F617CCB7CF009CB1B8 /* EJUtils */ = {
 			isa = PBXGroup;
 			children = (
+				A41AA34517CCD0C4003DAE81 /* EJBindingLocalStorage.h */,
+				A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */,
 				A4B7D6FD17CCB7CF009CB1B8 /* EJBindingHttpRequest.h */,
 				A4B7D6FE17CCB7CF009CB1B8 /* EJBindingHttpRequest.m */,
 				A4B7D6FF17CCB7CF009CB1B8 /* EJBindingKeyInput.h */,
@@ -1088,7 +1096,8 @@
 				A4B7D7A217CCB7CF009CB1B8 /* Default@2x.png in Resources */,
 				A4B7D84617CCB88A009CB1B8 /* InfoPlist.strings in Resources */,
 				A4B7D84717CCB88A009CB1B8 /* MainViewController.xib in Resources */,
-				A41AA33717CCC2CE003DAE81 /* Scripts in Resources */,
+				A41AA33717CCC2CE003DAE81 /* App in Resources */,
+				A41AA34417CCCA3D003DAE81 /* Scripts in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,7 +1106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A41AA32D17CCBE6C003DAE81 /* InfoPlist.strings in Resources */,
-				A41AA33817CCC2CE003DAE81 /* Scripts in Resources */,
+				A41AA33817CCC2CE003DAE81 /* App in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1174,6 +1183,7 @@
 				A4B7D7E017CCB7CF009CB1B8 /* EJBindingKeyInput.m in Sources */,
 				A4B7D7E217CCB7CF009CB1B8 /* EJBindingTouchInput.m in Sources */,
 				A4B7D7E417CCB7CF009CB1B8 /* EJBindingWindowEvents.m in Sources */,
+				A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */,
 				A41AA33417CCC15A003DAE81 /* LKView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
