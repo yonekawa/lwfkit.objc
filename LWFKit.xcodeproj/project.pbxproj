@@ -1,0 +1,1459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A41AA2CB17CCBBF8003DAE81 /* EXPBackwardCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA26117CCBBF8003DAE81 /* EXPBackwardCompatibility.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2CC17CCBBF8003DAE81 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA26317CCBBF8003DAE81 /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2CD17CCBBF8003DAE81 /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA26617CCBBF8003DAE81 /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2CE17CCBBF8003DAE81 /* Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA26917CCBBF8003DAE81 /* Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2CF17CCBBF8003DAE81 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA26B17CCBBF8003DAE81 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D017CCBBF8003DAE81 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA26D17CCBBF8003DAE81 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D117CCBBF8003DAE81 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA26F17CCBBF8003DAE81 /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D217CCBBF8003DAE81 /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA27217CCBBF8003DAE81 /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D317CCBBF8003DAE81 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA27517CCBBF8003DAE81 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D417CCBBF8003DAE81 /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA27717CCBBF8003DAE81 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D517CCBBF8003DAE81 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA27917CCBBF8003DAE81 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D617CCBBF8003DAE81 /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA27B17CCBBF8003DAE81 /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D717CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA27D17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D817CCBBF8003DAE81 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA27F17CCBBF8003DAE81 /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2D917CCBBF8003DAE81 /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28117CCBBF8003DAE81 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2DA17CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28317CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2DB17CCBBF8003DAE81 /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28517CCBBF8003DAE81 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2DC17CCBBF8003DAE81 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28717CCBBF8003DAE81 /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2DD17CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28917CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2DE17CCBBF8003DAE81 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28B17CCBBF8003DAE81 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2DF17CCBBF8003DAE81 /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28D17CCBBF8003DAE81 /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E017CCBBF8003DAE81 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA28F17CCBBF8003DAE81 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E117CCBBF8003DAE81 /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA29117CCBBF8003DAE81 /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E217CCBBF8003DAE81 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA29317CCBBF8003DAE81 /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E317CCBBF8003DAE81 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA29517CCBBF8003DAE81 /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E417CCBBF8003DAE81 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA29717CCBBF8003DAE81 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E517CCBBF8003DAE81 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA29917CCBBF8003DAE81 /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E617CCBBF8003DAE81 /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA29D17CCBBF8003DAE81 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E717CCBBF8003DAE81 /* AsynchronousTestingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA29F17CCBBF8003DAE81 /* AsynchronousTestingTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E817CCBBF8003DAE81 /* CustomMatcherImplementationsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2A017CCBBF8003DAE81 /* CustomMatcherImplementationsTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2E917CCBBF8003DAE81 /* DynamicPredicateMatcherTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2A117CCBBF8003DAE81 /* DynamicPredicateMatcherTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2EA17CCBBF8003DAE81 /* ExpectationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2A217CCBBF8003DAE81 /* ExpectationTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2EB17CCBBF8003DAE81 /* EXPFailTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2A317CCBBF8003DAE81 /* EXPFailTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2EC17CCBBF8003DAE81 /* EXPExpect+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2A617CCBBF8003DAE81 /* EXPExpect+Test.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2ED17CCBBF8003DAE81 /* FakeTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2A817CCBBF8003DAE81 /* FakeTestCase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2EE17CCBBF8003DAE81 /* Fixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2AA17CCBBF8003DAE81 /* Fixtures.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2EF17CCBBF8003DAE81 /* EXPMatchers+beCloseToTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2AD17CCBBF8003DAE81 /* EXPMatchers+beCloseToTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F017CCBBF8003DAE81 /* EXPMatchers+beFalsyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2AE17CCBBF8003DAE81 /* EXPMatchers+beFalsyTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F117CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualToTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2AF17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualToTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F217CCBBF8003DAE81 /* EXPMatchers+beGreaterThanTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B017CCBBF8003DAE81 /* EXPMatchers+beGreaterThanTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F317CCBBF8003DAE81 /* EXPMatchers+beIdenticalToTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B117CCBBF8003DAE81 /* EXPMatchers+beIdenticalToTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F417CCBBF8003DAE81 /* EXPMatchers+beInstanceOfTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B217CCBBF8003DAE81 /* EXPMatchers+beInstanceOfTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F517CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOfTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B317CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOfTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F617CCBBF8003DAE81 /* EXPMatchers+beKindOfTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B417CCBBF8003DAE81 /* EXPMatchers+beKindOfTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F717CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualToTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B517CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualToTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F817CCBBF8003DAE81 /* EXPMatchers+beLessThanTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B617CCBBF8003DAE81 /* EXPMatchers+beLessThanTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2F917CCBBF8003DAE81 /* EXPMatchers+beNilTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B717CCBBF8003DAE81 /* EXPMatchers+beNilTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2FA17CCBBF8003DAE81 /* EXPMatchers+beSubclassOfTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B817CCBBF8003DAE81 /* EXPMatchers+beSubclassOfTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2FB17CCBBF8003DAE81 /* EXPMatchers+beTruthyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2B917CCBBF8003DAE81 /* EXPMatchers+beTruthyTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2FC17CCBBF8003DAE81 /* EXPMatchers+containTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2BA17CCBBF8003DAE81 /* EXPMatchers+containTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2FD17CCBBF8003DAE81 /* EXPMatchers+equalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2BB17CCBBF8003DAE81 /* EXPMatchers+equalTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2FE17CCBBF8003DAE81 /* EXPMatchers+haveCountOfTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2BC17CCBBF8003DAE81 /* EXPMatchers+haveCountOfTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA2FF17CCBBF8003DAE81 /* EXPMatchers+raiseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2BD17CCBBF8003DAE81 /* EXPMatchers+raiseTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA30017CCBBF8003DAE81 /* EXPMatchers+raiseWithReasonTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2BE17CCBBF8003DAE81 /* EXPMatchers+raiseWithReasonTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA30117CCBBF8003DAE81 /* MiscTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2BF17CCBBF8003DAE81 /* MiscTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA30217CCBBF8003DAE81 /* NSValue+ExpectaTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA2C017CCBBF8003DAE81 /* NSValue+ExpectaTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA31017CCBC7B003DAE81 /* AlphaTexture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6C617CCB7CF009CB1B8 /* AlphaTexture.fsh */; };
+		A41AA31117CCBC7B003DAE81 /* Flat.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6C717CCB7CF009CB1B8 /* Flat.fsh */; };
+		A41AA31217CCBC7B003DAE81 /* Pattern.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6C817CCB7CF009CB1B8 /* Pattern.fsh */; };
+		A41AA31317CCBC7B003DAE81 /* RadialGradient.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6C917CCB7CF009CB1B8 /* RadialGradient.fsh */; };
+		A41AA31417CCBC7B003DAE81 /* Texture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6CA17CCB7CF009CB1B8 /* Texture.fsh */; };
+		A41AA31517CCBC7B003DAE81 /* Vertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6CB17CCB7CF009CB1B8 /* Vertex.vsh */; };
+		A41AA31817CCBCB9003DAE81 /* Ejecta.js in Resources */ = {isa = PBXBuildFile; fileRef = A41AA31617CCBC8F003DAE81 /* Ejecta.js */; };
+		A41AA31A17CCBD4A003DAE81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31917CCBD4A003DAE81 /* AudioToolbox.framework */; };
+		A41AA31C17CCBD4E003DAE81 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31B17CCBD4E003DAE81 /* AVFoundation.framework */; };
+		A41AA31E17CCBD56003DAE81 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31D17CCBD56003DAE81 /* OpenGLES.framework */; };
+		A41AA32017CCBD61003DAE81 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31F17CCBD61003DAE81 /* CFNetwork.framework */; };
+		A41AA32217CCBD67003DAE81 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32117CCBD67003DAE81 /* CoreText.framework */; };
+		A41AA32417CCBD6F003DAE81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32317CCBD6E003DAE81 /* QuartzCore.framework */; };
+		A41AA32617CCBD74003DAE81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32517CCBD74003DAE81 /* SystemConfiguration.framework */; };
+		A41AA32817CCBD88003DAE81 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32717CCBD88003DAE81 /* OpenAL.framework */; };
+		A41AA32A17CCBDB2003DAE81 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32917CCBDB2003DAE81 /* libstdc++.dylib */; };
+		A41AA32C17CCBDBB003DAE81 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32B17CCBDBB003DAE81 /* libicucore.dylib */; };
+		A41AA32D17CCBE6C003DAE81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D83E17CCB879009CB1B8 /* InfoPlist.strings */; };
+		A41AA33417CCC15A003DAE81 /* LKView.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA33317CCC15A003DAE81 /* LKView.m */; };
+		A41AA33517CCC15A003DAE81 /* LKView.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA33317CCC15A003DAE81 /* LKView.m */; };
+		A41AA33717CCC2CE003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA33617CCC2CE003DAE81 /* Scripts */; };
+		A41AA33817CCC2CE003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA33617CCC2CE003DAE81 /* Scripts */; };
+		A41AA33B17CCC3A7003DAE81 /* LKViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA33A17CCC3A7003DAE81 /* LKViewTest.m */; };
+		A41AA33C17CCC48E003DAE81 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
+		A41AA33D17CCC49B003DAE81 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */; };
+		A4B7D64017CCB679009CB1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D63F17CCB679009CB1B8 /* UIKit.framework */; };
+		A4B7D64217CCB679009CB1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64117CCB679009CB1B8 /* Foundation.framework */; };
+		A4B7D64417CCB679009CB1B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
+		A4B7D66417CCB679009CB1B8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D66317CCB679009CB1B8 /* SenTestingKit.framework */; };
+		A4B7D66517CCB679009CB1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D63F17CCB679009CB1B8 /* UIKit.framework */; };
+		A4B7D66617CCB679009CB1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64117CCB679009CB1B8 /* Foundation.framework */; };
+		A4B7D79F17CCB7CF009CB1B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D67C17CCB7CF009CB1B8 /* AppDelegate.m */; };
+		A4B7D7A017CCB7CF009CB1B8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D67D17CCB7CF009CB1B8 /* Default-568h@2x.png */; };
+		A4B7D7A117CCB7CF009CB1B8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D67E17CCB7CF009CB1B8 /* Default.png */; };
+		A4B7D7A217CCB7CF009CB1B8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D67F17CCB7CF009CB1B8 /* Default@2x.png */; };
+		A4B7D7A617CCB7CF009CB1B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D68617CCB7CF009CB1B8 /* main.m */; };
+		A4B7D7A717CCB7CF009CB1B8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D68817CCB7CF009CB1B8 /* MainViewController.m */; };
+		A4B7D7A917CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69117CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7AA17CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69317CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7AB17CCB7CF009CB1B8 /* EJBindingAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69517CCB7CF009CB1B8 /* EJBindingAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7AC17CCB7CF009CB1B8 /* EJOpenALBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69717CCB7CF009CB1B8 /* EJOpenALBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7AD17CCB7CF009CB1B8 /* EJSharedOpenALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69917CCB7CF009CB1B8 /* EJSharedOpenALManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7AE17CCB7CF009CB1B8 /* EJBindingBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69B17CCB7CF009CB1B8 /* EJBindingBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7AF17CCB7CF009CB1B8 /* EJBindingEjectaCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69D17CCB7CF009CB1B8 /* EJBindingEjectaCore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B017CCB7CF009CB1B8 /* EJBindingEventedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69F17CCB7CF009CB1B8 /* EJBindingEventedBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B217CCB7CF009CB1B8 /* EJBindingCanvasContext2D.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6A517CCB7CF009CB1B8 /* EJBindingCanvasContext2D.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B317CCB7CF009CB1B8 /* EJBindingCanvasGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6A717CCB7CF009CB1B8 /* EJBindingCanvasGradient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B417CCB7CF009CB1B8 /* EJBindingCanvasPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6A917CCB7CF009CB1B8 /* EJBindingCanvasPattern.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B517CCB7CF009CB1B8 /* EJBindingImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6AB17CCB7CF009CB1B8 /* EJBindingImageData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B617CCB7CF009CB1B8 /* EJBindingTextMetrics.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6AD17CCB7CF009CB1B8 /* EJBindingTextMetrics.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B717CCB7CF009CB1B8 /* EJCanvasContext2D.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6B017CCB7CF009CB1B8 /* EJCanvasContext2D.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B817CCB7CF009CB1B8 /* EJCanvasContext2DScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6B217CCB7CF009CB1B8 /* EJCanvasContext2DScreen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7B917CCB7CF009CB1B8 /* EJCanvasContext2DTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6B417CCB7CF009CB1B8 /* EJCanvasContext2DTexture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7BA17CCB7CF009CB1B8 /* EJCanvasGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6B617CCB7CF009CB1B8 /* EJCanvasGradient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7BB17CCB7CF009CB1B8 /* EJCanvasPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6B817CCB7CF009CB1B8 /* EJCanvasPattern.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7BC17CCB7CF009CB1B8 /* EJConvertColorRGBA.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6BA17CCB7CF009CB1B8 /* EJConvertColorRGBA.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7BD17CCB7CF009CB1B8 /* EJFont.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6BC17CCB7CF009CB1B8 /* EJFont.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7BE17CCB7CF009CB1B8 /* EJGLProgram2D.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6BE17CCB7CF009CB1B8 /* EJGLProgram2D.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7BF17CCB7CF009CB1B8 /* EJGLProgram2DRadialGradient.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6C017CCB7CF009CB1B8 /* EJGLProgram2DRadialGradient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7C017CCB7CF009CB1B8 /* EJImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6C217CCB7CF009CB1B8 /* EJImageData.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7C117CCB7CF009CB1B8 /* EJPath.mm in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6C417CCB7CF009CB1B8 /* EJPath.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7C817CCB7CF009CB1B8 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6CD17CCB7CF009CB1B8 /* EAGLView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7C917CCB7CF009CB1B8 /* EJBindingCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6CF17CCB7CF009CB1B8 /* EJBindingCanvas.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7CA17CCB7CF009CB1B8 /* EJBindingCanvasStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6D117CCB7CF009CB1B8 /* EJBindingCanvasStyle.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7CB17CCB7CF009CB1B8 /* EJBindingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6D317CCB7CF009CB1B8 /* EJBindingImage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7CC17CCB7CF009CB1B8 /* EJCanvasContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6D517CCB7CF009CB1B8 /* EJCanvasContext.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7CD17CCB7CF009CB1B8 /* EJSharedTextureCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6D917CCB7CF009CB1B8 /* EJSharedTextureCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7CE17CCB7CF009CB1B8 /* EJTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6DB17CCB7CF009CB1B8 /* EJTexture.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7CF17CCB7CF009CB1B8 /* EJTextureStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6DD17CCB7CF009CB1B8 /* EJTextureStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D017CCB7CF009CB1B8 /* EJBindingCanvasContextWebGL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6E017CCB7CF009CB1B8 /* EJBindingCanvasContextWebGL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D117CCB7CF009CB1B8 /* EJBindingWebGLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6E217CCB7CF009CB1B8 /* EJBindingWebGLExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D217CCB7CF009CB1B8 /* EJBindingWebGLObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6E417CCB7CF009CB1B8 /* EJBindingWebGLObjects.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D317CCB7CF009CB1B8 /* EJCanvasContextWebGL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6E617CCB7CF009CB1B8 /* EJCanvasContextWebGL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D417CCB7CF009CB1B8 /* EJConvertWebGL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6E817CCB7CF009CB1B8 /* EJConvertWebGL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D517CCB7CF009CB1B8 /* EJClassLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6EA17CCB7CF009CB1B8 /* EJClassLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D617CCB7CF009CB1B8 /* EJConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6EC17CCB7CF009CB1B8 /* EJConvert.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D817CCB7CF009CB1B8 /* EJJavaScriptView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6EF17CCB7CF009CB1B8 /* EJJavaScriptView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7D917CCB7CF009CB1B8 /* EJNonRetainingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6F117CCB7CF009CB1B8 /* EJNonRetainingProxy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7DA17CCB7CF009CB1B8 /* EJSharedOpenGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6F317CCB7CF009CB1B8 /* EJSharedOpenGLContext.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7DB17CCB7CF009CB1B8 /* EJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6F517CCB7CF009CB1B8 /* EJTimer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7DF17CCB7CF009CB1B8 /* EJBindingHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6FE17CCB7CF009CB1B8 /* EJBindingHttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7E017CCB7CF009CB1B8 /* EJBindingKeyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D70017CCB7CF009CB1B8 /* EJBindingKeyInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7E217CCB7CF009CB1B8 /* EJBindingTouchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D70417CCB7CF009CB1B8 /* EJBindingTouchInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7E417CCB7CF009CB1B8 /* EJBindingWindowEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D70817CCB7CF009CB1B8 /* EJBindingWindowEvents.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4B7D7E817CCB7CF009CB1B8 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */; };
+		A4B7D84617CCB88A009CB1B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D84217CCB88A009CB1B8 /* InfoPlist.strings */; };
+		A4B7D84717CCB88A009CB1B8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D84417CCB88A009CB1B8 /* MainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A41AA30817CCBBF9003DAE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41AA25617CCBBF8003DAE81 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF0C13B2DD520010F4D7;
+			remoteInfo = Expecta;
+		};
+		A41AA30A17CCBBF9003DAE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41AA25617CCBBF8003DAE81 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067CE13B2E6D100EA26FF;
+			remoteInfo = "Expecta-iOS";
+		};
+		A41AA30C17CCBBF9003DAE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41AA25617CCBBF8003DAE81 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9ACDF1D13B2DD520010F4D7;
+			remoteInfo = ExpectaTests;
+		};
+		A41AA30E17CCBBF9003DAE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A41AA25617CCBBF8003DAE81 /* Expecta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E93067DA13B2E6D100EA26FF;
+			remoteInfo = "Expecta-iOSTests";
+		};
+		A4B7D66717CCB679009CB1B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4B7D63417CCB679009CB1B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4B7D63B17CCB679009CB1B8;
+			remoteInfo = LWFKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A41AA25317CCBBF8003DAE81 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A41AA25417CCBBF8003DAE81 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
+		A41AA25517CCBBF8003DAE81 /* Expecta.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Expecta.podspec; sourceTree = "<group>"; };
+		A41AA25617CCBBF8003DAE81 /* Expecta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Expecta.xcodeproj; sourceTree = "<group>"; };
+		A41AA25917CCBBF8003DAE81 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A41AA25B17CCBBF8003DAE81 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A41AA25C17CCBBF8003DAE81 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
+		A41AA25D17CCBBF8003DAE81 /* RDD.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RDD.md; sourceTree = "<group>"; };
+		A41AA25E17CCBBF8003DAE81 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		A41AA26017CCBBF8003DAE81 /* EXPBackwardCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPBackwardCompatibility.h; sourceTree = "<group>"; };
+		A41AA26117CCBBF8003DAE81 /* EXPBackwardCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPBackwardCompatibility.m; sourceTree = "<group>"; };
+		A41AA26217CCBBF8003DAE81 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		A41AA26317CCBBF8003DAE81 /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		A41AA26417CCBBF8003DAE81 /* EXPDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPDefines.h; sourceTree = "<group>"; };
+		A41AA26517CCBBF8003DAE81 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPDoubleTuple.h; sourceTree = "<group>"; };
+		A41AA26617CCBBF8003DAE81 /* EXPDoubleTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPDoubleTuple.m; sourceTree = "<group>"; };
+		A41AA26717CCBBF8003DAE81 /* Expecta-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Expecta-Prefix.pch"; sourceTree = "<group>"; };
+		A41AA26817CCBBF8003DAE81 /* Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expecta.h; sourceTree = "<group>"; };
+		A41AA26917CCBBF8003DAE81 /* Expecta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expecta.m; sourceTree = "<group>"; };
+		A41AA26A17CCBBF8003DAE81 /* ExpectaSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpectaSupport.h; sourceTree = "<group>"; };
+		A41AA26B17CCBBF8003DAE81 /* ExpectaSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpectaSupport.m; sourceTree = "<group>"; };
+		A41AA26C17CCBBF8003DAE81 /* EXPExpect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPExpect.h; sourceTree = "<group>"; };
+		A41AA26D17CCBBF8003DAE81 /* EXPExpect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPExpect.m; sourceTree = "<group>"; };
+		A41AA26E17CCBBF8003DAE81 /* EXPFloatTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPFloatTuple.h; sourceTree = "<group>"; };
+		A41AA26F17CCBBF8003DAE81 /* EXPFloatTuple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPFloatTuple.m; sourceTree = "<group>"; };
+		A41AA27017CCBBF8003DAE81 /* EXPMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatcher.h; sourceTree = "<group>"; };
+		A41AA27117CCBBF8003DAE81 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		A41AA27217CCBBF8003DAE81 /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		A41AA27417CCBBF8003DAE81 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		A41AA27517CCBBF8003DAE81 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		A41AA27617CCBBF8003DAE81 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		A41AA27717CCBBF8003DAE81 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		A41AA27817CCBBF8003DAE81 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		A41AA27917CCBBF8003DAE81 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		A41AA27A17CCBBF8003DAE81 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		A41AA27B17CCBBF8003DAE81 /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		A41AA27C17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		A41AA27D17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		A41AA27E17CCBBF8003DAE81 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		A41AA27F17CCBBF8003DAE81 /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		A41AA28017CCBBF8003DAE81 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		A41AA28117CCBBF8003DAE81 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		A41AA28217CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		A41AA28317CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		A41AA28417CCBBF8003DAE81 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		A41AA28517CCBBF8003DAE81 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		A41AA28617CCBBF8003DAE81 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		A41AA28717CCBBF8003DAE81 /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		A41AA28817CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		A41AA28917CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		A41AA28A17CCBBF8003DAE81 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		A41AA28B17CCBBF8003DAE81 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		A41AA28C17CCBBF8003DAE81 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		A41AA28D17CCBBF8003DAE81 /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		A41AA28E17CCBBF8003DAE81 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		A41AA28F17CCBBF8003DAE81 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		A41AA29017CCBBF8003DAE81 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		A41AA29117CCBBF8003DAE81 /* EXPMatchers+contain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		A41AA29217CCBBF8003DAE81 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		A41AA29317CCBBF8003DAE81 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		A41AA29417CCBBF8003DAE81 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		A41AA29517CCBBF8003DAE81 /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		A41AA29617CCBBF8003DAE81 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		A41AA29717CCBBF8003DAE81 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		A41AA29817CCBBF8003DAE81 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		A41AA29917CCBBF8003DAE81 /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		A41AA29A17CCBBF8003DAE81 /* EXPMatchers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatchers.h; sourceTree = "<group>"; };
+		A41AA29B17CCBBF8003DAE81 /* NSObject+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expecta.h"; sourceTree = "<group>"; };
+		A41AA29C17CCBBF8003DAE81 /* NSValue+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+Expecta.h"; sourceTree = "<group>"; };
+		A41AA29D17CCBBF8003DAE81 /* NSValue+Expecta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+Expecta.m"; sourceTree = "<group>"; };
+		A41AA29F17CCBBF8003DAE81 /* AsynchronousTestingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchronousTestingTest.m; sourceTree = "<group>"; };
+		A41AA2A017CCBBF8003DAE81 /* CustomMatcherImplementationsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomMatcherImplementationsTest.m; sourceTree = "<group>"; };
+		A41AA2A117CCBBF8003DAE81 /* DynamicPredicateMatcherTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicPredicateMatcherTest.m; sourceTree = "<group>"; };
+		A41AA2A217CCBBF8003DAE81 /* ExpectationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpectationTest.m; sourceTree = "<group>"; };
+		A41AA2A317CCBBF8003DAE81 /* EXPFailTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPFailTest.m; sourceTree = "<group>"; };
+		A41AA2A517CCBBF8003DAE81 /* EXPExpect+Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPExpect+Test.h"; sourceTree = "<group>"; };
+		A41AA2A617CCBBF8003DAE81 /* EXPExpect+Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPExpect+Test.m"; sourceTree = "<group>"; };
+		A41AA2A717CCBBF8003DAE81 /* FakeTestCase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FakeTestCase.h; sourceTree = "<group>"; };
+		A41AA2A817CCBBF8003DAE81 /* FakeTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FakeTestCase.m; sourceTree = "<group>"; };
+		A41AA2A917CCBBF8003DAE81 /* Fixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fixtures.h; sourceTree = "<group>"; };
+		A41AA2AA17CCBBF8003DAE81 /* Fixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fixtures.m; sourceTree = "<group>"; };
+		A41AA2AB17CCBBF8003DAE81 /* TestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHelper.h; sourceTree = "<group>"; };
+		A41AA2AD17CCBBF8003DAE81 /* EXPMatchers+beCloseToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beCloseToTest.m"; sourceTree = "<group>"; };
+		A41AA2AE17CCBBF8003DAE81 /* EXPMatchers+beFalsyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beFalsyTest.m"; sourceTree = "<group>"; };
+		A41AA2AF17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beGreaterThanOrEqualToTest.m"; sourceTree = "<group>"; };
+		A41AA2B017CCBBF8003DAE81 /* EXPMatchers+beGreaterThanTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beGreaterThanTest.m"; sourceTree = "<group>"; };
+		A41AA2B117CCBBF8003DAE81 /* EXPMatchers+beIdenticalToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beIdenticalToTest.m"; sourceTree = "<group>"; };
+		A41AA2B217CCBBF8003DAE81 /* EXPMatchers+beInstanceOfTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beInstanceOfTest.m"; sourceTree = "<group>"; };
+		A41AA2B317CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOfTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beInTheRangeOfTest.m"; sourceTree = "<group>"; };
+		A41AA2B417CCBBF8003DAE81 /* EXPMatchers+beKindOfTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beKindOfTest.m"; sourceTree = "<group>"; };
+		A41AA2B517CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualToTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beLessThanOrEqualToTest.m"; sourceTree = "<group>"; };
+		A41AA2B617CCBBF8003DAE81 /* EXPMatchers+beLessThanTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beLessThanTest.m"; sourceTree = "<group>"; };
+		A41AA2B717CCBBF8003DAE81 /* EXPMatchers+beNilTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beNilTest.m"; sourceTree = "<group>"; };
+		A41AA2B817CCBBF8003DAE81 /* EXPMatchers+beSubclassOfTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beSubclassOfTest.m"; sourceTree = "<group>"; };
+		A41AA2B917CCBBF8003DAE81 /* EXPMatchers+beTruthyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+beTruthyTest.m"; sourceTree = "<group>"; };
+		A41AA2BA17CCBBF8003DAE81 /* EXPMatchers+containTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+containTest.m"; sourceTree = "<group>"; };
+		A41AA2BB17CCBBF8003DAE81 /* EXPMatchers+equalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+equalTest.m"; sourceTree = "<group>"; };
+		A41AA2BC17CCBBF8003DAE81 /* EXPMatchers+haveCountOfTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+haveCountOfTest.m"; sourceTree = "<group>"; };
+		A41AA2BD17CCBBF8003DAE81 /* EXPMatchers+raiseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+raiseTest.m"; sourceTree = "<group>"; };
+		A41AA2BE17CCBBF8003DAE81 /* EXPMatchers+raiseWithReasonTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EXPMatchers+raiseWithReasonTest.m"; sourceTree = "<group>"; };
+		A41AA2BF17CCBBF8003DAE81 /* MiscTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiscTest.m; sourceTree = "<group>"; };
+		A41AA2C017CCBBF8003DAE81 /* NSValue+ExpectaTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+ExpectaTest.m"; sourceTree = "<group>"; };
+		A41AA2C217CCBBF8003DAE81 /* Test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		A41AA31617CCBC8F003DAE81 /* Ejecta.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Ejecta.js; sourceTree = "<group>"; };
+		A41AA31917CCBD4A003DAE81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A41AA31B17CCBD4E003DAE81 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A41AA31D17CCBD56003DAE81 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A41AA31F17CCBD61003DAE81 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		A41AA32117CCBD67003DAE81 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		A41AA32317CCBD6E003DAE81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A41AA32517CCBD74003DAE81 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A41AA32717CCBD88003DAE81 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		A41AA32917CCBDB2003DAE81 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		A41AA32B17CCBDBB003DAE81 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		A41AA33217CCC15A003DAE81 /* LKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKView.h; sourceTree = "<group>"; };
+		A41AA33317CCC15A003DAE81 /* LKView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKView.m; sourceTree = "<group>"; };
+		A41AA33617CCC2CE003DAE81 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		A41AA33917CCC3A7003DAE81 /* LKViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKViewTest.h; sourceTree = "<group>"; };
+		A41AA33A17CCC3A7003DAE81 /* LKViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKViewTest.m; sourceTree = "<group>"; };
+		A4B7D63C17CCB679009CB1B8 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B7D63F17CCB679009CB1B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4B7D64117CCB679009CB1B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4B7D66217CCB679009CB1B8 /* Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B7D66317CCB679009CB1B8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A4B7D67B17CCB7CF009CB1B8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4B7D67C17CCB7CF009CB1B8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4B7D67D17CCB7CF009CB1B8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A4B7D67E17CCB7CF009CB1B8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A4B7D67F17CCB7CF009CB1B8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A4B7D68417CCB7CF009CB1B8 /* Examples-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Examples-Info.plist"; sourceTree = "<group>"; };
+		A4B7D68517CCB7CF009CB1B8 /* Examples-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Examples-Prefix.pch"; sourceTree = "<group>"; };
+		A4B7D68617CCB7CF009CB1B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4B7D68717CCB7CF009CB1B8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		A4B7D68817CCB7CF009CB1B8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		A4B7D68F17CCB7CF009CB1B8 /* EJAudioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSource.h; sourceTree = "<group>"; };
+		A4B7D69017CCB7CF009CB1B8 /* EJAudioSourceAVAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSourceAVAudio.h; sourceTree = "<group>"; };
+		A4B7D69117CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAudioSourceAVAudio.m; sourceTree = "<group>"; };
+		A4B7D69217CCB7CF009CB1B8 /* EJAudioSourceOpenAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSourceOpenAL.h; sourceTree = "<group>"; };
+		A4B7D69317CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAudioSourceOpenAL.m; sourceTree = "<group>"; };
+		A4B7D69417CCB7CF009CB1B8 /* EJBindingAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingAudio.h; sourceTree = "<group>"; };
+		A4B7D69517CCB7CF009CB1B8 /* EJBindingAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingAudio.m; sourceTree = "<group>"; };
+		A4B7D69617CCB7CF009CB1B8 /* EJOpenALBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJOpenALBuffer.h; sourceTree = "<group>"; };
+		A4B7D69717CCB7CF009CB1B8 /* EJOpenALBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJOpenALBuffer.m; sourceTree = "<group>"; };
+		A4B7D69817CCB7CF009CB1B8 /* EJSharedOpenALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJSharedOpenALManager.h; sourceTree = "<group>"; };
+		A4B7D69917CCB7CF009CB1B8 /* EJSharedOpenALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJSharedOpenALManager.m; sourceTree = "<group>"; };
+		A4B7D69A17CCB7CF009CB1B8 /* EJBindingBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingBase.h; sourceTree = "<group>"; };
+		A4B7D69B17CCB7CF009CB1B8 /* EJBindingBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingBase.m; sourceTree = "<group>"; };
+		A4B7D69C17CCB7CF009CB1B8 /* EJBindingEjectaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingEjectaCore.h; sourceTree = "<group>"; };
+		A4B7D69D17CCB7CF009CB1B8 /* EJBindingEjectaCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingEjectaCore.m; sourceTree = "<group>"; };
+		A4B7D69E17CCB7CF009CB1B8 /* EJBindingEventedBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingEventedBase.h; sourceTree = "<group>"; };
+		A4B7D69F17CCB7CF009CB1B8 /* EJBindingEventedBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingEventedBase.m; sourceTree = "<group>"; };
+		A4B7D6A417CCB7CF009CB1B8 /* EJBindingCanvasContext2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingCanvasContext2D.h; sourceTree = "<group>"; };
+		A4B7D6A517CCB7CF009CB1B8 /* EJBindingCanvasContext2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingCanvasContext2D.m; sourceTree = "<group>"; };
+		A4B7D6A617CCB7CF009CB1B8 /* EJBindingCanvasGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingCanvasGradient.h; sourceTree = "<group>"; };
+		A4B7D6A717CCB7CF009CB1B8 /* EJBindingCanvasGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingCanvasGradient.m; sourceTree = "<group>"; };
+		A4B7D6A817CCB7CF009CB1B8 /* EJBindingCanvasPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingCanvasPattern.h; sourceTree = "<group>"; };
+		A4B7D6A917CCB7CF009CB1B8 /* EJBindingCanvasPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingCanvasPattern.m; sourceTree = "<group>"; };
+		A4B7D6AA17CCB7CF009CB1B8 /* EJBindingImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingImageData.h; sourceTree = "<group>"; };
+		A4B7D6AB17CCB7CF009CB1B8 /* EJBindingImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingImageData.m; sourceTree = "<group>"; };
+		A4B7D6AC17CCB7CF009CB1B8 /* EJBindingTextMetrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingTextMetrics.h; sourceTree = "<group>"; };
+		A4B7D6AD17CCB7CF009CB1B8 /* EJBindingTextMetrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingTextMetrics.m; sourceTree = "<group>"; };
+		A4B7D6AE17CCB7CF009CB1B8 /* EJCanvas2DTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvas2DTypes.h; sourceTree = "<group>"; };
+		A4B7D6AF17CCB7CF009CB1B8 /* EJCanvasContext2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContext2D.h; sourceTree = "<group>"; };
+		A4B7D6B017CCB7CF009CB1B8 /* EJCanvasContext2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContext2D.m; sourceTree = "<group>"; };
+		A4B7D6B117CCB7CF009CB1B8 /* EJCanvasContext2DScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContext2DScreen.h; sourceTree = "<group>"; };
+		A4B7D6B217CCB7CF009CB1B8 /* EJCanvasContext2DScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContext2DScreen.m; sourceTree = "<group>"; };
+		A4B7D6B317CCB7CF009CB1B8 /* EJCanvasContext2DTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContext2DTexture.h; sourceTree = "<group>"; };
+		A4B7D6B417CCB7CF009CB1B8 /* EJCanvasContext2DTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContext2DTexture.m; sourceTree = "<group>"; };
+		A4B7D6B517CCB7CF009CB1B8 /* EJCanvasGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasGradient.h; sourceTree = "<group>"; };
+		A4B7D6B617CCB7CF009CB1B8 /* EJCanvasGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasGradient.m; sourceTree = "<group>"; };
+		A4B7D6B717CCB7CF009CB1B8 /* EJCanvasPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasPattern.h; sourceTree = "<group>"; };
+		A4B7D6B817CCB7CF009CB1B8 /* EJCanvasPattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasPattern.m; sourceTree = "<group>"; };
+		A4B7D6B917CCB7CF009CB1B8 /* EJConvertColorRGBA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJConvertColorRGBA.h; sourceTree = "<group>"; };
+		A4B7D6BA17CCB7CF009CB1B8 /* EJConvertColorRGBA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJConvertColorRGBA.m; sourceTree = "<group>"; };
+		A4B7D6BB17CCB7CF009CB1B8 /* EJFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJFont.h; sourceTree = "<group>"; };
+		A4B7D6BC17CCB7CF009CB1B8 /* EJFont.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EJFont.mm; sourceTree = "<group>"; };
+		A4B7D6BD17CCB7CF009CB1B8 /* EJGLProgram2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJGLProgram2D.h; sourceTree = "<group>"; };
+		A4B7D6BE17CCB7CF009CB1B8 /* EJGLProgram2D.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJGLProgram2D.m; sourceTree = "<group>"; };
+		A4B7D6BF17CCB7CF009CB1B8 /* EJGLProgram2DRadialGradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJGLProgram2DRadialGradient.h; sourceTree = "<group>"; };
+		A4B7D6C017CCB7CF009CB1B8 /* EJGLProgram2DRadialGradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJGLProgram2DRadialGradient.m; sourceTree = "<group>"; };
+		A4B7D6C117CCB7CF009CB1B8 /* EJImageData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJImageData.h; sourceTree = "<group>"; };
+		A4B7D6C217CCB7CF009CB1B8 /* EJImageData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJImageData.m; sourceTree = "<group>"; };
+		A4B7D6C317CCB7CF009CB1B8 /* EJPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJPath.h; sourceTree = "<group>"; };
+		A4B7D6C417CCB7CF009CB1B8 /* EJPath.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EJPath.mm; sourceTree = "<group>"; };
+		A4B7D6C617CCB7CF009CB1B8 /* AlphaTexture.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = AlphaTexture.fsh; sourceTree = "<group>"; };
+		A4B7D6C717CCB7CF009CB1B8 /* Flat.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Flat.fsh; sourceTree = "<group>"; };
+		A4B7D6C817CCB7CF009CB1B8 /* Pattern.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Pattern.fsh; sourceTree = "<group>"; };
+		A4B7D6C917CCB7CF009CB1B8 /* RadialGradient.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = RadialGradient.fsh; sourceTree = "<group>"; };
+		A4B7D6CA17CCB7CF009CB1B8 /* Texture.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Texture.fsh; sourceTree = "<group>"; };
+		A4B7D6CB17CCB7CF009CB1B8 /* Vertex.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Vertex.vsh; sourceTree = "<group>"; };
+		A4B7D6CC17CCB7CF009CB1B8 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		A4B7D6CD17CCB7CF009CB1B8 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		A4B7D6CE17CCB7CF009CB1B8 /* EJBindingCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingCanvas.h; sourceTree = "<group>"; };
+		A4B7D6CF17CCB7CF009CB1B8 /* EJBindingCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingCanvas.m; sourceTree = "<group>"; };
+		A4B7D6D017CCB7CF009CB1B8 /* EJBindingCanvasStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingCanvasStyle.h; sourceTree = "<group>"; };
+		A4B7D6D117CCB7CF009CB1B8 /* EJBindingCanvasStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingCanvasStyle.m; sourceTree = "<group>"; };
+		A4B7D6D217CCB7CF009CB1B8 /* EJBindingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingImage.h; sourceTree = "<group>"; };
+		A4B7D6D317CCB7CF009CB1B8 /* EJBindingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingImage.m; sourceTree = "<group>"; };
+		A4B7D6D417CCB7CF009CB1B8 /* EJCanvasContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContext.h; sourceTree = "<group>"; };
+		A4B7D6D517CCB7CF009CB1B8 /* EJCanvasContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContext.m; sourceTree = "<group>"; };
+		A4B7D6D617CCB7CF009CB1B8 /* EJDrawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJDrawable.h; sourceTree = "<group>"; };
+		A4B7D6D717CCB7CF009CB1B8 /* EJPresentable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJPresentable.h; sourceTree = "<group>"; };
+		A4B7D6D817CCB7CF009CB1B8 /* EJSharedTextureCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJSharedTextureCache.h; sourceTree = "<group>"; };
+		A4B7D6D917CCB7CF009CB1B8 /* EJSharedTextureCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJSharedTextureCache.m; sourceTree = "<group>"; };
+		A4B7D6DA17CCB7CF009CB1B8 /* EJTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJTexture.h; sourceTree = "<group>"; };
+		A4B7D6DB17CCB7CF009CB1B8 /* EJTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJTexture.m; sourceTree = "<group>"; };
+		A4B7D6DC17CCB7CF009CB1B8 /* EJTextureStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJTextureStorage.h; sourceTree = "<group>"; };
+		A4B7D6DD17CCB7CF009CB1B8 /* EJTextureStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJTextureStorage.m; sourceTree = "<group>"; };
+		A4B7D6DF17CCB7CF009CB1B8 /* EJBindingCanvasContextWebGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingCanvasContextWebGL.h; sourceTree = "<group>"; };
+		A4B7D6E017CCB7CF009CB1B8 /* EJBindingCanvasContextWebGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingCanvasContextWebGL.m; sourceTree = "<group>"; };
+		A4B7D6E117CCB7CF009CB1B8 /* EJBindingWebGLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingWebGLExtensions.h; sourceTree = "<group>"; };
+		A4B7D6E217CCB7CF009CB1B8 /* EJBindingWebGLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingWebGLExtensions.m; sourceTree = "<group>"; };
+		A4B7D6E317CCB7CF009CB1B8 /* EJBindingWebGLObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingWebGLObjects.h; sourceTree = "<group>"; };
+		A4B7D6E417CCB7CF009CB1B8 /* EJBindingWebGLObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingWebGLObjects.m; sourceTree = "<group>"; };
+		A4B7D6E517CCB7CF009CB1B8 /* EJCanvasContextWebGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJCanvasContextWebGL.h; sourceTree = "<group>"; };
+		A4B7D6E617CCB7CF009CB1B8 /* EJCanvasContextWebGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJCanvasContextWebGL.m; sourceTree = "<group>"; };
+		A4B7D6E717CCB7CF009CB1B8 /* EJConvertWebGL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJConvertWebGL.h; sourceTree = "<group>"; };
+		A4B7D6E817CCB7CF009CB1B8 /* EJConvertWebGL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJConvertWebGL.m; sourceTree = "<group>"; };
+		A4B7D6E917CCB7CF009CB1B8 /* EJClassLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJClassLoader.h; sourceTree = "<group>"; };
+		A4B7D6EA17CCB7CF009CB1B8 /* EJClassLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJClassLoader.m; sourceTree = "<group>"; };
+		A4B7D6EB17CCB7CF009CB1B8 /* EJConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJConvert.h; sourceTree = "<group>"; };
+		A4B7D6EC17CCB7CF009CB1B8 /* EJConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJConvert.m; sourceTree = "<group>"; };
+		A4B7D6EE17CCB7CF009CB1B8 /* EJJavaScriptView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJJavaScriptView.h; sourceTree = "<group>"; };
+		A4B7D6EF17CCB7CF009CB1B8 /* EJJavaScriptView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJJavaScriptView.m; sourceTree = "<group>"; };
+		A4B7D6F017CCB7CF009CB1B8 /* EJNonRetainingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJNonRetainingProxy.h; sourceTree = "<group>"; };
+		A4B7D6F117CCB7CF009CB1B8 /* EJNonRetainingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJNonRetainingProxy.m; sourceTree = "<group>"; };
+		A4B7D6F217CCB7CF009CB1B8 /* EJSharedOpenGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJSharedOpenGLContext.h; sourceTree = "<group>"; };
+		A4B7D6F317CCB7CF009CB1B8 /* EJSharedOpenGLContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJSharedOpenGLContext.m; sourceTree = "<group>"; };
+		A4B7D6F417CCB7CF009CB1B8 /* EJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJTimer.h; sourceTree = "<group>"; };
+		A4B7D6F517CCB7CF009CB1B8 /* EJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJTimer.m; sourceTree = "<group>"; };
+		A4B7D6FD17CCB7CF009CB1B8 /* EJBindingHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingHttpRequest.h; sourceTree = "<group>"; };
+		A4B7D6FE17CCB7CF009CB1B8 /* EJBindingHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingHttpRequest.m; sourceTree = "<group>"; };
+		A4B7D6FF17CCB7CF009CB1B8 /* EJBindingKeyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingKeyInput.h; sourceTree = "<group>"; };
+		A4B7D70017CCB7CF009CB1B8 /* EJBindingKeyInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingKeyInput.m; sourceTree = "<group>"; };
+		A4B7D70317CCB7CF009CB1B8 /* EJBindingTouchInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingTouchInput.h; sourceTree = "<group>"; };
+		A4B7D70417CCB7CF009CB1B8 /* EJBindingTouchInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingTouchInput.m; sourceTree = "<group>"; };
+		A4B7D70717CCB7CF009CB1B8 /* EJBindingWindowEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingWindowEvents.h; sourceTree = "<group>"; };
+		A4B7D70817CCB7CF009CB1B8 /* EJBindingWindowEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingWindowEvents.m; sourceTree = "<group>"; };
+		A4B7D71117CCB7CF009CB1B8 /* JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScript.h; sourceTree = "<group>"; };
+		A4B7D71217CCB7CF009CB1B8 /* JavaScriptCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCore.h; sourceTree = "<group>"; };
+		A4B7D71317CCB7CF009CB1B8 /* JSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBase.h; sourceTree = "<group>"; };
+		A4B7D71417CCB7CF009CB1B8 /* JSContextRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSContextRef.h; sourceTree = "<group>"; };
+		A4B7D71517CCB7CF009CB1B8 /* JSObjectRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSObjectRef.h; sourceTree = "<group>"; };
+		A4B7D71617CCB7CF009CB1B8 /* JSStringRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStringRef.h; sourceTree = "<group>"; };
+		A4B7D71717CCB7CF009CB1B8 /* JSStringRefCF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSStringRefCF.h; sourceTree = "<group>"; };
+		A4B7D71817CCB7CF009CB1B8 /* JSTypedArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSTypedArray.h; sourceTree = "<group>"; };
+		A4B7D71917CCB7CF009CB1B8 /* JSValueRef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSValueRef.h; sourceTree = "<group>"; };
+		A4B7D71A17CCB7CF009CB1B8 /* WebKitAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebKitAvailability.h; sourceTree = "<group>"; };
+		A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libJavaScriptCore.a; sourceTree = "<group>"; };
+		A4B7D79917CCB7CF009CB1B8 /* LKTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTests.h; sourceTree = "<group>"; };
+		A4B7D79D17CCB7CF009CB1B8 /* Tests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		A4B7D79E17CCB7CF009CB1B8 /* Tests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		A4B7D83F17CCB879009CB1B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		A4B7D84317CCB88A009CB1B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		A4B7D84517CCB88A009CB1B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4B7D63917CCB679009CB1B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B7D64017CCB679009CB1B8 /* UIKit.framework in Frameworks */,
+				A4B7D64217CCB679009CB1B8 /* Foundation.framework in Frameworks */,
+				A4B7D64417CCB679009CB1B8 /* CoreGraphics.framework in Frameworks */,
+				A41AA32617CCBD74003DAE81 /* SystemConfiguration.framework in Frameworks */,
+				A41AA32417CCBD6F003DAE81 /* QuartzCore.framework in Frameworks */,
+				A41AA32217CCBD67003DAE81 /* CoreText.framework in Frameworks */,
+				A41AA32017CCBD61003DAE81 /* CFNetwork.framework in Frameworks */,
+				A41AA31E17CCBD56003DAE81 /* OpenGLES.framework in Frameworks */,
+				A41AA32817CCBD88003DAE81 /* OpenAL.framework in Frameworks */,
+				A41AA31C17CCBD4E003DAE81 /* AVFoundation.framework in Frameworks */,
+				A41AA31A17CCBD4A003DAE81 /* AudioToolbox.framework in Frameworks */,
+				A41AA32C17CCBDBB003DAE81 /* libicucore.dylib in Frameworks */,
+				A41AA32A17CCBDB2003DAE81 /* libstdc++.dylib in Frameworks */,
+				A4B7D7E817CCB7CF009CB1B8 /* libJavaScriptCore.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B7D65E17CCB679009CB1B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41AA33D17CCC49B003DAE81 /* libJavaScriptCore.a in Frameworks */,
+				A41AA33C17CCC48E003DAE81 /* CoreGraphics.framework in Frameworks */,
+				A4B7D66417CCB679009CB1B8 /* SenTestingKit.framework in Frameworks */,
+				A4B7D66517CCB679009CB1B8 /* UIKit.framework in Frameworks */,
+				A4B7D66617CCB679009CB1B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A41AA25117CCBBF8003DAE81 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA25217CCBBF8003DAE81 /* expecta */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		A41AA25217CCBBF8003DAE81 /* expecta */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA25317CCBBF8003DAE81 /* .gitignore */,
+				A41AA25417CCBBF8003DAE81 /* CHANGELOG.md */,
+				A41AA25517CCBBF8003DAE81 /* Expecta.podspec */,
+				A41AA25617CCBBF8003DAE81 /* Expecta.xcodeproj */,
+				A41AA25917CCBBF8003DAE81 /* LICENSE */,
+				A41AA25A17CCBBF8003DAE81 /* products */,
+				A41AA25C17CCBBF8003DAE81 /* Rakefile */,
+				A41AA25D17CCBBF8003DAE81 /* RDD.md */,
+				A41AA25E17CCBBF8003DAE81 /* README.md */,
+				A41AA25F17CCBBF8003DAE81 /* src */,
+				A41AA29E17CCBBF8003DAE81 /* test */,
+			);
+			path = expecta;
+			sourceTree = "<group>";
+		};
+		A41AA25717CCBBF8003DAE81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA30917CCBBF9003DAE81 /* libExpecta.a */,
+				A41AA30B17CCBBF9003DAE81 /* libExpecta-iOS.a */,
+				A41AA30D17CCBBF9003DAE81 /* ExpectaTests.octest */,
+				A41AA30F17CCBBF9003DAE81 /* Expecta-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A41AA25A17CCBBF8003DAE81 /* products */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA25B17CCBBF8003DAE81 /* .gitignore */,
+			);
+			path = products;
+			sourceTree = "<group>";
+		};
+		A41AA25F17CCBBF8003DAE81 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA26017CCBBF8003DAE81 /* EXPBackwardCompatibility.h */,
+				A41AA26117CCBBF8003DAE81 /* EXPBackwardCompatibility.m */,
+				A41AA26217CCBBF8003DAE81 /* EXPBlockDefinedMatcher.h */,
+				A41AA26317CCBBF8003DAE81 /* EXPBlockDefinedMatcher.m */,
+				A41AA26417CCBBF8003DAE81 /* EXPDefines.h */,
+				A41AA26517CCBBF8003DAE81 /* EXPDoubleTuple.h */,
+				A41AA26617CCBBF8003DAE81 /* EXPDoubleTuple.m */,
+				A41AA26717CCBBF8003DAE81 /* Expecta-Prefix.pch */,
+				A41AA26817CCBBF8003DAE81 /* Expecta.h */,
+				A41AA26917CCBBF8003DAE81 /* Expecta.m */,
+				A41AA26A17CCBBF8003DAE81 /* ExpectaSupport.h */,
+				A41AA26B17CCBBF8003DAE81 /* ExpectaSupport.m */,
+				A41AA26C17CCBBF8003DAE81 /* EXPExpect.h */,
+				A41AA26D17CCBBF8003DAE81 /* EXPExpect.m */,
+				A41AA26E17CCBBF8003DAE81 /* EXPFloatTuple.h */,
+				A41AA26F17CCBBF8003DAE81 /* EXPFloatTuple.m */,
+				A41AA27017CCBBF8003DAE81 /* EXPMatcher.h */,
+				A41AA27117CCBBF8003DAE81 /* EXPUnsupportedObject.h */,
+				A41AA27217CCBBF8003DAE81 /* EXPUnsupportedObject.m */,
+				A41AA27317CCBBF8003DAE81 /* matchers */,
+				A41AA29B17CCBBF8003DAE81 /* NSObject+Expecta.h */,
+				A41AA29C17CCBBF8003DAE81 /* NSValue+Expecta.h */,
+				A41AA29D17CCBBF8003DAE81 /* NSValue+Expecta.m */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A41AA27317CCBBF8003DAE81 /* matchers */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA27417CCBBF8003DAE81 /* EXPMatcherHelpers.h */,
+				A41AA27517CCBBF8003DAE81 /* EXPMatcherHelpers.m */,
+				A41AA27617CCBBF8003DAE81 /* EXPMatchers+beCloseTo.h */,
+				A41AA27717CCBBF8003DAE81 /* EXPMatchers+beCloseTo.m */,
+				A41AA27817CCBBF8003DAE81 /* EXPMatchers+beFalsy.h */,
+				A41AA27917CCBBF8003DAE81 /* EXPMatchers+beFalsy.m */,
+				A41AA27A17CCBBF8003DAE81 /* EXPMatchers+beGreaterThan.h */,
+				A41AA27B17CCBBF8003DAE81 /* EXPMatchers+beGreaterThan.m */,
+				A41AA27C17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				A41AA27D17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				A41AA27E17CCBBF8003DAE81 /* EXPMatchers+beIdenticalTo.h */,
+				A41AA27F17CCBBF8003DAE81 /* EXPMatchers+beIdenticalTo.m */,
+				A41AA28017CCBBF8003DAE81 /* EXPMatchers+beInstanceOf.h */,
+				A41AA28117CCBBF8003DAE81 /* EXPMatchers+beInstanceOf.m */,
+				A41AA28217CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOf.h */,
+				A41AA28317CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOf.m */,
+				A41AA28417CCBBF8003DAE81 /* EXPMatchers+beKindOf.h */,
+				A41AA28517CCBBF8003DAE81 /* EXPMatchers+beKindOf.m */,
+				A41AA28617CCBBF8003DAE81 /* EXPMatchers+beLessThan.h */,
+				A41AA28717CCBBF8003DAE81 /* EXPMatchers+beLessThan.m */,
+				A41AA28817CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				A41AA28917CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualTo.m */,
+				A41AA28A17CCBBF8003DAE81 /* EXPMatchers+beNil.h */,
+				A41AA28B17CCBBF8003DAE81 /* EXPMatchers+beNil.m */,
+				A41AA28C17CCBBF8003DAE81 /* EXPMatchers+beSubclassOf.h */,
+				A41AA28D17CCBBF8003DAE81 /* EXPMatchers+beSubclassOf.m */,
+				A41AA28E17CCBBF8003DAE81 /* EXPMatchers+beTruthy.h */,
+				A41AA28F17CCBBF8003DAE81 /* EXPMatchers+beTruthy.m */,
+				A41AA29017CCBBF8003DAE81 /* EXPMatchers+contain.h */,
+				A41AA29117CCBBF8003DAE81 /* EXPMatchers+contain.m */,
+				A41AA29217CCBBF8003DAE81 /* EXPMatchers+equal.h */,
+				A41AA29317CCBBF8003DAE81 /* EXPMatchers+equal.m */,
+				A41AA29417CCBBF8003DAE81 /* EXPMatchers+haveCountOf.h */,
+				A41AA29517CCBBF8003DAE81 /* EXPMatchers+haveCountOf.m */,
+				A41AA29617CCBBF8003DAE81 /* EXPMatchers+raise.h */,
+				A41AA29717CCBBF8003DAE81 /* EXPMatchers+raise.m */,
+				A41AA29817CCBBF8003DAE81 /* EXPMatchers+raiseWithReason.h */,
+				A41AA29917CCBBF8003DAE81 /* EXPMatchers+raiseWithReason.m */,
+				A41AA29A17CCBBF8003DAE81 /* EXPMatchers.h */,
+			);
+			path = matchers;
+			sourceTree = "<group>";
+		};
+		A41AA29E17CCBBF8003DAE81 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA29F17CCBBF8003DAE81 /* AsynchronousTestingTest.m */,
+				A41AA2A017CCBBF8003DAE81 /* CustomMatcherImplementationsTest.m */,
+				A41AA2A117CCBBF8003DAE81 /* DynamicPredicateMatcherTest.m */,
+				A41AA2A217CCBBF8003DAE81 /* ExpectationTest.m */,
+				A41AA2A317CCBBF8003DAE81 /* EXPFailTest.m */,
+				A41AA2A417CCBBF8003DAE81 /* helpers */,
+				A41AA2AC17CCBBF8003DAE81 /* matchers */,
+				A41AA2BF17CCBBF8003DAE81 /* MiscTest.m */,
+				A41AA2C017CCBBF8003DAE81 /* NSValue+ExpectaTest.m */,
+				A41AA2C117CCBBF8003DAE81 /* support */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		A41AA2A417CCBBF8003DAE81 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA2A517CCBBF8003DAE81 /* EXPExpect+Test.h */,
+				A41AA2A617CCBBF8003DAE81 /* EXPExpect+Test.m */,
+				A41AA2A717CCBBF8003DAE81 /* FakeTestCase.h */,
+				A41AA2A817CCBBF8003DAE81 /* FakeTestCase.m */,
+				A41AA2A917CCBBF8003DAE81 /* Fixtures.h */,
+				A41AA2AA17CCBBF8003DAE81 /* Fixtures.m */,
+				A41AA2AB17CCBBF8003DAE81 /* TestHelper.h */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		A41AA2AC17CCBBF8003DAE81 /* matchers */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA2AD17CCBBF8003DAE81 /* EXPMatchers+beCloseToTest.m */,
+				A41AA2AE17CCBBF8003DAE81 /* EXPMatchers+beFalsyTest.m */,
+				A41AA2AF17CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualToTest.m */,
+				A41AA2B017CCBBF8003DAE81 /* EXPMatchers+beGreaterThanTest.m */,
+				A41AA2B117CCBBF8003DAE81 /* EXPMatchers+beIdenticalToTest.m */,
+				A41AA2B217CCBBF8003DAE81 /* EXPMatchers+beInstanceOfTest.m */,
+				A41AA2B317CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOfTest.m */,
+				A41AA2B417CCBBF8003DAE81 /* EXPMatchers+beKindOfTest.m */,
+				A41AA2B517CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualToTest.m */,
+				A41AA2B617CCBBF8003DAE81 /* EXPMatchers+beLessThanTest.m */,
+				A41AA2B717CCBBF8003DAE81 /* EXPMatchers+beNilTest.m */,
+				A41AA2B817CCBBF8003DAE81 /* EXPMatchers+beSubclassOfTest.m */,
+				A41AA2B917CCBBF8003DAE81 /* EXPMatchers+beTruthyTest.m */,
+				A41AA2BA17CCBBF8003DAE81 /* EXPMatchers+containTest.m */,
+				A41AA2BB17CCBBF8003DAE81 /* EXPMatchers+equalTest.m */,
+				A41AA2BC17CCBBF8003DAE81 /* EXPMatchers+haveCountOfTest.m */,
+				A41AA2BD17CCBBF8003DAE81 /* EXPMatchers+raiseTest.m */,
+				A41AA2BE17CCBBF8003DAE81 /* EXPMatchers+raiseWithReasonTest.m */,
+			);
+			path = matchers;
+			sourceTree = "<group>";
+		};
+		A41AA2C117CCBBF8003DAE81 /* support */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA2C217CCBBF8003DAE81 /* Test-Info.plist */,
+			);
+			path = support;
+			sourceTree = "<group>";
+		};
+		A41AA32E17CCC050003DAE81 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA33217CCC15A003DAE81 /* LKView.h */,
+				A41AA33317CCC15A003DAE81 /* LKView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A4B7D63317CCB679009CB1B8 = {
+			isa = PBXGroup;
+			children = (
+				A41AA33617CCC2CE003DAE81 /* Scripts */,
+				A4B7D68917CCB7CF009CB1B8 /* LWFKit */,
+				A4B7D67A17CCB7CF009CB1B8 /* Examples */,
+				A4B7D72417CCB7CF009CB1B8 /* Tests */,
+				A4B7D63E17CCB679009CB1B8 /* Frameworks */,
+				A4B7D63D17CCB679009CB1B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4B7D63D17CCB679009CB1B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D63C17CCB679009CB1B8 /* Examples.app */,
+				A4B7D66217CCB679009CB1B8 /* Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4B7D63E17CCB679009CB1B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA32B17CCBDBB003DAE81 /* libicucore.dylib */,
+				A41AA32917CCBDB2003DAE81 /* libstdc++.dylib */,
+				A41AA32717CCBD88003DAE81 /* OpenAL.framework */,
+				A41AA32517CCBD74003DAE81 /* SystemConfiguration.framework */,
+				A41AA32317CCBD6E003DAE81 /* QuartzCore.framework */,
+				A41AA32117CCBD67003DAE81 /* CoreText.framework */,
+				A41AA31F17CCBD61003DAE81 /* CFNetwork.framework */,
+				A41AA31D17CCBD56003DAE81 /* OpenGLES.framework */,
+				A41AA31B17CCBD4E003DAE81 /* AVFoundation.framework */,
+				A41AA31917CCBD4A003DAE81 /* AudioToolbox.framework */,
+				A4B7D63F17CCB679009CB1B8 /* UIKit.framework */,
+				A4B7D64117CCB679009CB1B8 /* Foundation.framework */,
+				A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */,
+				A4B7D66317CCB679009CB1B8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4B7D67A17CCB7CF009CB1B8 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D84117CCB88A009CB1B8 /* en.lproj */,
+				A4B7D67D17CCB7CF009CB1B8 /* Default-568h@2x.png */,
+				A4B7D67E17CCB7CF009CB1B8 /* Default.png */,
+				A4B7D67F17CCB7CF009CB1B8 /* Default@2x.png */,
+				A4B7D68417CCB7CF009CB1B8 /* Examples-Info.plist */,
+				A4B7D68517CCB7CF009CB1B8 /* Examples-Prefix.pch */,
+				A4B7D68617CCB7CF009CB1B8 /* main.m */,
+				A4B7D67B17CCB7CF009CB1B8 /* AppDelegate.h */,
+				A4B7D67C17CCB7CF009CB1B8 /* AppDelegate.m */,
+				A4B7D68717CCB7CF009CB1B8 /* MainViewController.h */,
+				A4B7D68817CCB7CF009CB1B8 /* MainViewController.m */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		A4B7D68917CCB7CF009CB1B8 /* LWFKit */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA32E17CCC050003DAE81 /* Views */,
+				A4B7D68A17CCB7CF009CB1B8 /* Externals */,
+			);
+			path = LWFKit;
+			sourceTree = "<group>";
+		};
+		A4B7D68A17CCB7CF009CB1B8 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D68B17CCB7CF009CB1B8 /* Ejecta */,
+				A4B7D71017CCB7CF009CB1B8 /* JavaScriptCore */,
+				A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		A4B7D68B17CCB7CF009CB1B8 /* Ejecta */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D68E17CCB7CF009CB1B8 /* EJAudio */,
+				A4B7D6A217CCB7CF009CB1B8 /* EJCanvas */,
+				A4B7D6F617CCB7CF009CB1B8 /* EJUtils */,
+				A4B7D69A17CCB7CF009CB1B8 /* EJBindingBase.h */,
+				A4B7D69B17CCB7CF009CB1B8 /* EJBindingBase.m */,
+				A4B7D69C17CCB7CF009CB1B8 /* EJBindingEjectaCore.h */,
+				A4B7D69D17CCB7CF009CB1B8 /* EJBindingEjectaCore.m */,
+				A4B7D69E17CCB7CF009CB1B8 /* EJBindingEventedBase.h */,
+				A4B7D69F17CCB7CF009CB1B8 /* EJBindingEventedBase.m */,
+				A4B7D6E917CCB7CF009CB1B8 /* EJClassLoader.h */,
+				A4B7D6EA17CCB7CF009CB1B8 /* EJClassLoader.m */,
+				A4B7D6EB17CCB7CF009CB1B8 /* EJConvert.h */,
+				A4B7D6EC17CCB7CF009CB1B8 /* EJConvert.m */,
+				A4B7D6EE17CCB7CF009CB1B8 /* EJJavaScriptView.h */,
+				A4B7D6EF17CCB7CF009CB1B8 /* EJJavaScriptView.m */,
+				A4B7D6F017CCB7CF009CB1B8 /* EJNonRetainingProxy.h */,
+				A4B7D6F117CCB7CF009CB1B8 /* EJNonRetainingProxy.m */,
+				A4B7D6F217CCB7CF009CB1B8 /* EJSharedOpenGLContext.h */,
+				A4B7D6F317CCB7CF009CB1B8 /* EJSharedOpenGLContext.m */,
+				A4B7D6F417CCB7CF009CB1B8 /* EJTimer.h */,
+				A4B7D6F517CCB7CF009CB1B8 /* EJTimer.m */,
+				A41AA31617CCBC8F003DAE81 /* Ejecta.js */,
+			);
+			path = Ejecta;
+			sourceTree = "<group>";
+		};
+		A4B7D68E17CCB7CF009CB1B8 /* EJAudio */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D68F17CCB7CF009CB1B8 /* EJAudioSource.h */,
+				A4B7D69017CCB7CF009CB1B8 /* EJAudioSourceAVAudio.h */,
+				A4B7D69117CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m */,
+				A4B7D69217CCB7CF009CB1B8 /* EJAudioSourceOpenAL.h */,
+				A4B7D69317CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m */,
+				A4B7D69417CCB7CF009CB1B8 /* EJBindingAudio.h */,
+				A4B7D69517CCB7CF009CB1B8 /* EJBindingAudio.m */,
+				A4B7D69617CCB7CF009CB1B8 /* EJOpenALBuffer.h */,
+				A4B7D69717CCB7CF009CB1B8 /* EJOpenALBuffer.m */,
+				A4B7D69817CCB7CF009CB1B8 /* EJSharedOpenALManager.h */,
+				A4B7D69917CCB7CF009CB1B8 /* EJSharedOpenALManager.m */,
+			);
+			path = EJAudio;
+			sourceTree = "<group>";
+		};
+		A4B7D6A217CCB7CF009CB1B8 /* EJCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D6A317CCB7CF009CB1B8 /* 2D */,
+				A4B7D6CC17CCB7CF009CB1B8 /* EAGLView.h */,
+				A4B7D6CD17CCB7CF009CB1B8 /* EAGLView.m */,
+				A4B7D6CE17CCB7CF009CB1B8 /* EJBindingCanvas.h */,
+				A4B7D6CF17CCB7CF009CB1B8 /* EJBindingCanvas.m */,
+				A4B7D6D017CCB7CF009CB1B8 /* EJBindingCanvasStyle.h */,
+				A4B7D6D117CCB7CF009CB1B8 /* EJBindingCanvasStyle.m */,
+				A4B7D6D217CCB7CF009CB1B8 /* EJBindingImage.h */,
+				A4B7D6D317CCB7CF009CB1B8 /* EJBindingImage.m */,
+				A4B7D6D417CCB7CF009CB1B8 /* EJCanvasContext.h */,
+				A4B7D6D517CCB7CF009CB1B8 /* EJCanvasContext.m */,
+				A4B7D6D617CCB7CF009CB1B8 /* EJDrawable.h */,
+				A4B7D6D717CCB7CF009CB1B8 /* EJPresentable.h */,
+				A4B7D6D817CCB7CF009CB1B8 /* EJSharedTextureCache.h */,
+				A4B7D6D917CCB7CF009CB1B8 /* EJSharedTextureCache.m */,
+				A4B7D6DA17CCB7CF009CB1B8 /* EJTexture.h */,
+				A4B7D6DB17CCB7CF009CB1B8 /* EJTexture.m */,
+				A4B7D6DC17CCB7CF009CB1B8 /* EJTextureStorage.h */,
+				A4B7D6DD17CCB7CF009CB1B8 /* EJTextureStorage.m */,
+				A4B7D6DE17CCB7CF009CB1B8 /* WebGL */,
+			);
+			path = EJCanvas;
+			sourceTree = "<group>";
+		};
+		A4B7D6A317CCB7CF009CB1B8 /* 2D */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D6A417CCB7CF009CB1B8 /* EJBindingCanvasContext2D.h */,
+				A4B7D6A517CCB7CF009CB1B8 /* EJBindingCanvasContext2D.m */,
+				A4B7D6A617CCB7CF009CB1B8 /* EJBindingCanvasGradient.h */,
+				A4B7D6A717CCB7CF009CB1B8 /* EJBindingCanvasGradient.m */,
+				A4B7D6A817CCB7CF009CB1B8 /* EJBindingCanvasPattern.h */,
+				A4B7D6A917CCB7CF009CB1B8 /* EJBindingCanvasPattern.m */,
+				A4B7D6AA17CCB7CF009CB1B8 /* EJBindingImageData.h */,
+				A4B7D6AB17CCB7CF009CB1B8 /* EJBindingImageData.m */,
+				A4B7D6AC17CCB7CF009CB1B8 /* EJBindingTextMetrics.h */,
+				A4B7D6AD17CCB7CF009CB1B8 /* EJBindingTextMetrics.m */,
+				A4B7D6AE17CCB7CF009CB1B8 /* EJCanvas2DTypes.h */,
+				A4B7D6AF17CCB7CF009CB1B8 /* EJCanvasContext2D.h */,
+				A4B7D6B017CCB7CF009CB1B8 /* EJCanvasContext2D.m */,
+				A4B7D6B117CCB7CF009CB1B8 /* EJCanvasContext2DScreen.h */,
+				A4B7D6B217CCB7CF009CB1B8 /* EJCanvasContext2DScreen.m */,
+				A4B7D6B317CCB7CF009CB1B8 /* EJCanvasContext2DTexture.h */,
+				A4B7D6B417CCB7CF009CB1B8 /* EJCanvasContext2DTexture.m */,
+				A4B7D6B517CCB7CF009CB1B8 /* EJCanvasGradient.h */,
+				A4B7D6B617CCB7CF009CB1B8 /* EJCanvasGradient.m */,
+				A4B7D6B717CCB7CF009CB1B8 /* EJCanvasPattern.h */,
+				A4B7D6B817CCB7CF009CB1B8 /* EJCanvasPattern.m */,
+				A4B7D6B917CCB7CF009CB1B8 /* EJConvertColorRGBA.h */,
+				A4B7D6BA17CCB7CF009CB1B8 /* EJConvertColorRGBA.m */,
+				A4B7D6BB17CCB7CF009CB1B8 /* EJFont.h */,
+				A4B7D6BC17CCB7CF009CB1B8 /* EJFont.mm */,
+				A4B7D6BD17CCB7CF009CB1B8 /* EJGLProgram2D.h */,
+				A4B7D6BE17CCB7CF009CB1B8 /* EJGLProgram2D.m */,
+				A4B7D6BF17CCB7CF009CB1B8 /* EJGLProgram2DRadialGradient.h */,
+				A4B7D6C017CCB7CF009CB1B8 /* EJGLProgram2DRadialGradient.m */,
+				A4B7D6C117CCB7CF009CB1B8 /* EJImageData.h */,
+				A4B7D6C217CCB7CF009CB1B8 /* EJImageData.m */,
+				A4B7D6C317CCB7CF009CB1B8 /* EJPath.h */,
+				A4B7D6C417CCB7CF009CB1B8 /* EJPath.mm */,
+				A4B7D6C517CCB7CF009CB1B8 /* Shaders */,
+			);
+			path = 2D;
+			sourceTree = "<group>";
+		};
+		A4B7D6C517CCB7CF009CB1B8 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D6C617CCB7CF009CB1B8 /* AlphaTexture.fsh */,
+				A4B7D6C717CCB7CF009CB1B8 /* Flat.fsh */,
+				A4B7D6C817CCB7CF009CB1B8 /* Pattern.fsh */,
+				A4B7D6C917CCB7CF009CB1B8 /* RadialGradient.fsh */,
+				A4B7D6CA17CCB7CF009CB1B8 /* Texture.fsh */,
+				A4B7D6CB17CCB7CF009CB1B8 /* Vertex.vsh */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		A4B7D6DE17CCB7CF009CB1B8 /* WebGL */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D6DF17CCB7CF009CB1B8 /* EJBindingCanvasContextWebGL.h */,
+				A4B7D6E017CCB7CF009CB1B8 /* EJBindingCanvasContextWebGL.m */,
+				A4B7D6E117CCB7CF009CB1B8 /* EJBindingWebGLExtensions.h */,
+				A4B7D6E217CCB7CF009CB1B8 /* EJBindingWebGLExtensions.m */,
+				A4B7D6E317CCB7CF009CB1B8 /* EJBindingWebGLObjects.h */,
+				A4B7D6E417CCB7CF009CB1B8 /* EJBindingWebGLObjects.m */,
+				A4B7D6E517CCB7CF009CB1B8 /* EJCanvasContextWebGL.h */,
+				A4B7D6E617CCB7CF009CB1B8 /* EJCanvasContextWebGL.m */,
+				A4B7D6E717CCB7CF009CB1B8 /* EJConvertWebGL.h */,
+				A4B7D6E817CCB7CF009CB1B8 /* EJConvertWebGL.m */,
+			);
+			path = WebGL;
+			sourceTree = "<group>";
+		};
+		A4B7D6F617CCB7CF009CB1B8 /* EJUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D6FD17CCB7CF009CB1B8 /* EJBindingHttpRequest.h */,
+				A4B7D6FE17CCB7CF009CB1B8 /* EJBindingHttpRequest.m */,
+				A4B7D6FF17CCB7CF009CB1B8 /* EJBindingKeyInput.h */,
+				A4B7D70017CCB7CF009CB1B8 /* EJBindingKeyInput.m */,
+				A4B7D70317CCB7CF009CB1B8 /* EJBindingTouchInput.h */,
+				A4B7D70417CCB7CF009CB1B8 /* EJBindingTouchInput.m */,
+				A4B7D70717CCB7CF009CB1B8 /* EJBindingWindowEvents.h */,
+				A4B7D70817CCB7CF009CB1B8 /* EJBindingWindowEvents.m */,
+			);
+			path = EJUtils;
+			sourceTree = "<group>";
+		};
+		A4B7D71017CCB7CF009CB1B8 /* JavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D71117CCB7CF009CB1B8 /* JavaScript.h */,
+				A4B7D71217CCB7CF009CB1B8 /* JavaScriptCore.h */,
+				A4B7D71317CCB7CF009CB1B8 /* JSBase.h */,
+				A4B7D71417CCB7CF009CB1B8 /* JSContextRef.h */,
+				A4B7D71517CCB7CF009CB1B8 /* JSObjectRef.h */,
+				A4B7D71617CCB7CF009CB1B8 /* JSStringRef.h */,
+				A4B7D71717CCB7CF009CB1B8 /* JSStringRefCF.h */,
+				A4B7D71817CCB7CF009CB1B8 /* JSTypedArray.h */,
+				A4B7D71917CCB7CF009CB1B8 /* JSValueRef.h */,
+				A4B7D71A17CCB7CF009CB1B8 /* WebKitAvailability.h */,
+			);
+			path = JavaScriptCore;
+			sourceTree = "<group>";
+		};
+		A4B7D72417CCB7CF009CB1B8 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A41AA25117CCBBF8003DAE81 /* Externals */,
+				A4B7D83D17CCB879009CB1B8 /* en.lproj */,
+				A4B7D79917CCB7CF009CB1B8 /* LKTests.h */,
+				A4B7D79D17CCB7CF009CB1B8 /* Tests-Info.plist */,
+				A4B7D79E17CCB7CF009CB1B8 /* Tests-Prefix.pch */,
+				A41AA33917CCC3A7003DAE81 /* LKViewTest.h */,
+				A41AA33A17CCC3A7003DAE81 /* LKViewTest.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A4B7D83D17CCB879009CB1B8 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D83E17CCB879009CB1B8 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		A4B7D84117CCB88A009CB1B8 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7D84217CCB88A009CB1B8 /* InfoPlist.strings */,
+				A4B7D84417CCB88A009CB1B8 /* MainViewController.xib */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4B7D63B17CCB679009CB1B8 /* Examples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B7D67417CCB679009CB1B8 /* Build configuration list for PBXNativeTarget "Examples" */;
+			buildPhases = (
+				A4B7D63817CCB679009CB1B8 /* Sources */,
+				A4B7D63917CCB679009CB1B8 /* Frameworks */,
+				A4B7D63A17CCB679009CB1B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Examples;
+			productName = LWFKit;
+			productReference = A4B7D63C17CCB679009CB1B8 /* Examples.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4B7D66117CCB679009CB1B8 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4B7D67717CCB679009CB1B8 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				A4B7D65D17CCB679009CB1B8 /* Sources */,
+				A4B7D65E17CCB679009CB1B8 /* Frameworks */,
+				A4B7D65F17CCB679009CB1B8 /* Resources */,
+				A4B7D66017CCB679009CB1B8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4B7D66817CCB679009CB1B8 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = LWFKitTests;
+			productReference = A4B7D66217CCB679009CB1B8 /* Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4B7D63417CCB679009CB1B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LK;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = mog2dev.jp;
+			};
+			buildConfigurationList = A4B7D63717CCB679009CB1B8 /* Build configuration list for PBXProject "LWFKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A4B7D63317CCB679009CB1B8;
+			productRefGroup = A4B7D63D17CCB679009CB1B8 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A41AA25717CCBBF8003DAE81 /* Products */;
+					ProjectRef = A41AA25617CCBBF8003DAE81 /* Expecta.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				A4B7D63B17CCB679009CB1B8 /* Examples */,
+				A4B7D66117CCB679009CB1B8 /* Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A41AA30917CCBBF9003DAE81 /* libExpecta.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libExpecta.a;
+			remoteRef = A41AA30817CCBBF9003DAE81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41AA30B17CCBBF9003DAE81 /* libExpecta-iOS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libExpecta-iOS.a";
+			remoteRef = A41AA30A17CCBBF9003DAE81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41AA30D17CCBBF9003DAE81 /* ExpectaTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ExpectaTests.octest;
+			remoteRef = A41AA30C17CCBBF9003DAE81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A41AA30F17CCBBF9003DAE81 /* Expecta-iOSTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Expecta-iOSTests.octest";
+			remoteRef = A41AA30E17CCBBF9003DAE81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4B7D63A17CCB679009CB1B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41AA31817CCBCB9003DAE81 /* Ejecta.js in Resources */,
+				A41AA31017CCBC7B003DAE81 /* AlphaTexture.fsh in Resources */,
+				A41AA31117CCBC7B003DAE81 /* Flat.fsh in Resources */,
+				A41AA31217CCBC7B003DAE81 /* Pattern.fsh in Resources */,
+				A41AA31317CCBC7B003DAE81 /* RadialGradient.fsh in Resources */,
+				A41AA31417CCBC7B003DAE81 /* Texture.fsh in Resources */,
+				A41AA31517CCBC7B003DAE81 /* Vertex.vsh in Resources */,
+				A4B7D7A017CCB7CF009CB1B8 /* Default-568h@2x.png in Resources */,
+				A4B7D7A117CCB7CF009CB1B8 /* Default.png in Resources */,
+				A4B7D7A217CCB7CF009CB1B8 /* Default@2x.png in Resources */,
+				A4B7D84617CCB88A009CB1B8 /* InfoPlist.strings in Resources */,
+				A4B7D84717CCB88A009CB1B8 /* MainViewController.xib in Resources */,
+				A41AA33717CCC2CE003DAE81 /* Scripts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B7D65F17CCB679009CB1B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41AA32D17CCBE6C003DAE81 /* InfoPlist.strings in Resources */,
+				A41AA33817CCC2CE003DAE81 /* Scripts in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A4B7D66017CCB679009CB1B8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4B7D63817CCB679009CB1B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B7D79F17CCB7CF009CB1B8 /* AppDelegate.m in Sources */,
+				A4B7D7A617CCB7CF009CB1B8 /* main.m in Sources */,
+				A4B7D7A717CCB7CF009CB1B8 /* MainViewController.m in Sources */,
+				A4B7D7A917CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m in Sources */,
+				A4B7D7AA17CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m in Sources */,
+				A4B7D7AB17CCB7CF009CB1B8 /* EJBindingAudio.m in Sources */,
+				A4B7D7AC17CCB7CF009CB1B8 /* EJOpenALBuffer.m in Sources */,
+				A4B7D7AD17CCB7CF009CB1B8 /* EJSharedOpenALManager.m in Sources */,
+				A4B7D7AE17CCB7CF009CB1B8 /* EJBindingBase.m in Sources */,
+				A4B7D7AF17CCB7CF009CB1B8 /* EJBindingEjectaCore.m in Sources */,
+				A4B7D7B017CCB7CF009CB1B8 /* EJBindingEventedBase.m in Sources */,
+				A4B7D7B217CCB7CF009CB1B8 /* EJBindingCanvasContext2D.m in Sources */,
+				A4B7D7B317CCB7CF009CB1B8 /* EJBindingCanvasGradient.m in Sources */,
+				A4B7D7B417CCB7CF009CB1B8 /* EJBindingCanvasPattern.m in Sources */,
+				A4B7D7B517CCB7CF009CB1B8 /* EJBindingImageData.m in Sources */,
+				A4B7D7B617CCB7CF009CB1B8 /* EJBindingTextMetrics.m in Sources */,
+				A4B7D7B717CCB7CF009CB1B8 /* EJCanvasContext2D.m in Sources */,
+				A4B7D7B817CCB7CF009CB1B8 /* EJCanvasContext2DScreen.m in Sources */,
+				A4B7D7B917CCB7CF009CB1B8 /* EJCanvasContext2DTexture.m in Sources */,
+				A4B7D7BA17CCB7CF009CB1B8 /* EJCanvasGradient.m in Sources */,
+				A4B7D7BB17CCB7CF009CB1B8 /* EJCanvasPattern.m in Sources */,
+				A4B7D7BC17CCB7CF009CB1B8 /* EJConvertColorRGBA.m in Sources */,
+				A4B7D7BD17CCB7CF009CB1B8 /* EJFont.mm in Sources */,
+				A4B7D7BE17CCB7CF009CB1B8 /* EJGLProgram2D.m in Sources */,
+				A4B7D7BF17CCB7CF009CB1B8 /* EJGLProgram2DRadialGradient.m in Sources */,
+				A4B7D7C017CCB7CF009CB1B8 /* EJImageData.m in Sources */,
+				A4B7D7C117CCB7CF009CB1B8 /* EJPath.mm in Sources */,
+				A4B7D7C817CCB7CF009CB1B8 /* EAGLView.m in Sources */,
+				A4B7D7C917CCB7CF009CB1B8 /* EJBindingCanvas.m in Sources */,
+				A4B7D7CA17CCB7CF009CB1B8 /* EJBindingCanvasStyle.m in Sources */,
+				A4B7D7CB17CCB7CF009CB1B8 /* EJBindingImage.m in Sources */,
+				A4B7D7CC17CCB7CF009CB1B8 /* EJCanvasContext.m in Sources */,
+				A4B7D7CD17CCB7CF009CB1B8 /* EJSharedTextureCache.m in Sources */,
+				A4B7D7CE17CCB7CF009CB1B8 /* EJTexture.m in Sources */,
+				A4B7D7CF17CCB7CF009CB1B8 /* EJTextureStorage.m in Sources */,
+				A4B7D7D017CCB7CF009CB1B8 /* EJBindingCanvasContextWebGL.m in Sources */,
+				A4B7D7D117CCB7CF009CB1B8 /* EJBindingWebGLExtensions.m in Sources */,
+				A4B7D7D217CCB7CF009CB1B8 /* EJBindingWebGLObjects.m in Sources */,
+				A4B7D7D317CCB7CF009CB1B8 /* EJCanvasContextWebGL.m in Sources */,
+				A4B7D7D417CCB7CF009CB1B8 /* EJConvertWebGL.m in Sources */,
+				A4B7D7D517CCB7CF009CB1B8 /* EJClassLoader.m in Sources */,
+				A4B7D7D617CCB7CF009CB1B8 /* EJConvert.m in Sources */,
+				A4B7D7D817CCB7CF009CB1B8 /* EJJavaScriptView.m in Sources */,
+				A4B7D7D917CCB7CF009CB1B8 /* EJNonRetainingProxy.m in Sources */,
+				A4B7D7DA17CCB7CF009CB1B8 /* EJSharedOpenGLContext.m in Sources */,
+				A4B7D7DB17CCB7CF009CB1B8 /* EJTimer.m in Sources */,
+				A4B7D7DF17CCB7CF009CB1B8 /* EJBindingHttpRequest.m in Sources */,
+				A4B7D7E017CCB7CF009CB1B8 /* EJBindingKeyInput.m in Sources */,
+				A4B7D7E217CCB7CF009CB1B8 /* EJBindingTouchInput.m in Sources */,
+				A4B7D7E417CCB7CF009CB1B8 /* EJBindingWindowEvents.m in Sources */,
+				A41AA33417CCC15A003DAE81 /* LKView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B7D65D17CCB679009CB1B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A41AA2CB17CCBBF8003DAE81 /* EXPBackwardCompatibility.m in Sources */,
+				A41AA2CC17CCBBF8003DAE81 /* EXPBlockDefinedMatcher.m in Sources */,
+				A41AA2CD17CCBBF8003DAE81 /* EXPDoubleTuple.m in Sources */,
+				A41AA2CE17CCBBF8003DAE81 /* Expecta.m in Sources */,
+				A41AA2CF17CCBBF8003DAE81 /* ExpectaSupport.m in Sources */,
+				A41AA2D017CCBBF8003DAE81 /* EXPExpect.m in Sources */,
+				A41AA2D117CCBBF8003DAE81 /* EXPFloatTuple.m in Sources */,
+				A41AA2D217CCBBF8003DAE81 /* EXPUnsupportedObject.m in Sources */,
+				A41AA2D317CCBBF8003DAE81 /* EXPMatcherHelpers.m in Sources */,
+				A41AA2D417CCBBF8003DAE81 /* EXPMatchers+beCloseTo.m in Sources */,
+				A41AA2D517CCBBF8003DAE81 /* EXPMatchers+beFalsy.m in Sources */,
+				A41AA2D617CCBBF8003DAE81 /* EXPMatchers+beGreaterThan.m in Sources */,
+				A41AA2D717CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				A41AA2D817CCBBF8003DAE81 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				A41AA2D917CCBBF8003DAE81 /* EXPMatchers+beInstanceOf.m in Sources */,
+				A41AA2DA17CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				A41AA2DB17CCBBF8003DAE81 /* EXPMatchers+beKindOf.m in Sources */,
+				A41AA2DC17CCBBF8003DAE81 /* EXPMatchers+beLessThan.m in Sources */,
+				A41AA2DD17CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				A41AA2DE17CCBBF8003DAE81 /* EXPMatchers+beNil.m in Sources */,
+				A41AA2DF17CCBBF8003DAE81 /* EXPMatchers+beSubclassOf.m in Sources */,
+				A41AA2E017CCBBF8003DAE81 /* EXPMatchers+beTruthy.m in Sources */,
+				A41AA2E117CCBBF8003DAE81 /* EXPMatchers+contain.m in Sources */,
+				A41AA2E217CCBBF8003DAE81 /* EXPMatchers+equal.m in Sources */,
+				A41AA2E317CCBBF8003DAE81 /* EXPMatchers+haveCountOf.m in Sources */,
+				A41AA2E417CCBBF8003DAE81 /* EXPMatchers+raise.m in Sources */,
+				A41AA2E517CCBBF8003DAE81 /* EXPMatchers+raiseWithReason.m in Sources */,
+				A41AA2E617CCBBF8003DAE81 /* NSValue+Expecta.m in Sources */,
+				A41AA2E717CCBBF8003DAE81 /* AsynchronousTestingTest.m in Sources */,
+				A41AA2E817CCBBF8003DAE81 /* CustomMatcherImplementationsTest.m in Sources */,
+				A41AA2E917CCBBF8003DAE81 /* DynamicPredicateMatcherTest.m in Sources */,
+				A41AA2EA17CCBBF8003DAE81 /* ExpectationTest.m in Sources */,
+				A41AA2EB17CCBBF8003DAE81 /* EXPFailTest.m in Sources */,
+				A41AA2EC17CCBBF8003DAE81 /* EXPExpect+Test.m in Sources */,
+				A41AA2ED17CCBBF8003DAE81 /* FakeTestCase.m in Sources */,
+				A41AA2EE17CCBBF8003DAE81 /* Fixtures.m in Sources */,
+				A41AA2EF17CCBBF8003DAE81 /* EXPMatchers+beCloseToTest.m in Sources */,
+				A41AA2F017CCBBF8003DAE81 /* EXPMatchers+beFalsyTest.m in Sources */,
+				A41AA2F117CCBBF8003DAE81 /* EXPMatchers+beGreaterThanOrEqualToTest.m in Sources */,
+				A41AA2F217CCBBF8003DAE81 /* EXPMatchers+beGreaterThanTest.m in Sources */,
+				A41AA2F317CCBBF8003DAE81 /* EXPMatchers+beIdenticalToTest.m in Sources */,
+				A41AA2F417CCBBF8003DAE81 /* EXPMatchers+beInstanceOfTest.m in Sources */,
+				A41AA2F517CCBBF8003DAE81 /* EXPMatchers+beInTheRangeOfTest.m in Sources */,
+				A41AA2F617CCBBF8003DAE81 /* EXPMatchers+beKindOfTest.m in Sources */,
+				A41AA2F717CCBBF8003DAE81 /* EXPMatchers+beLessThanOrEqualToTest.m in Sources */,
+				A41AA2F817CCBBF8003DAE81 /* EXPMatchers+beLessThanTest.m in Sources */,
+				A41AA2F917CCBBF8003DAE81 /* EXPMatchers+beNilTest.m in Sources */,
+				A41AA2FA17CCBBF8003DAE81 /* EXPMatchers+beSubclassOfTest.m in Sources */,
+				A41AA2FB17CCBBF8003DAE81 /* EXPMatchers+beTruthyTest.m in Sources */,
+				A41AA2FC17CCBBF8003DAE81 /* EXPMatchers+containTest.m in Sources */,
+				A41AA2FD17CCBBF8003DAE81 /* EXPMatchers+equalTest.m in Sources */,
+				A41AA2FE17CCBBF8003DAE81 /* EXPMatchers+haveCountOfTest.m in Sources */,
+				A41AA2FF17CCBBF8003DAE81 /* EXPMatchers+raiseTest.m in Sources */,
+				A41AA30017CCBBF8003DAE81 /* EXPMatchers+raiseWithReasonTest.m in Sources */,
+				A41AA30117CCBBF8003DAE81 /* MiscTest.m in Sources */,
+				A41AA30217CCBBF8003DAE81 /* NSValue+ExpectaTest.m in Sources */,
+				A41AA33517CCC15A003DAE81 /* LKView.m in Sources */,
+				A41AA33B17CCC3A7003DAE81 /* LKViewTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4B7D66817CCB679009CB1B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4B7D63B17CCB679009CB1B8 /* Examples */;
+			targetProxy = A4B7D66717CCB679009CB1B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4B7D83E17CCB879009CB1B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B7D83F17CCB879009CB1B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4B7D84217CCB88A009CB1B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B7D84317CCB88A009CB1B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4B7D84417CCB88A009CB1B8 /* MainViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4B7D84517CCB88A009CB1B8 /* en */,
+			);
+			name = MainViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4B7D67217CCB679009CB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4B7D67317CCB679009CB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4B7D67517CCB679009CB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Examples/Examples-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/LWFKit/Externals\"";
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/Examples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LWFKit/Externals\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4B7D67617CCB679009CB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Examples/Examples-Prefix.pch";
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/LWFKit/Externals\"";
+				INFOPLIST_FILE = "$(SRCROOT)/Examples/Examples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LWFKit/Externals\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A4B7D67817CCB679009CB1B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Examples.app/Examples";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = $SRCROOT/LWFKit/Externals;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LWFKit/Externals\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A4B7D67917CCB679009CB1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Examples.app/Examples";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				HEADER_SEARCH_PATHS = $SRCROOT/LWFKit/Externals;
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/LWFKit/Externals\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4B7D63717CCB679009CB1B8 /* Build configuration list for PBXProject "LWFKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B7D67217CCB679009CB1B8 /* Debug */,
+				A4B7D67317CCB679009CB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B7D67417CCB679009CB1B8 /* Build configuration list for PBXNativeTarget "Examples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B7D67517CCB679009CB1B8 /* Debug */,
+				A4B7D67617CCB679009CB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4B7D67717CCB679009CB1B8 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4B7D67817CCB679009CB1B8 /* Debug */,
+				A4B7D67917CCB679009CB1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4B7D63417CCB679009CB1B8 /* Project object */;
+}
