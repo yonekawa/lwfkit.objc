@@ -1,1 +1,1 @@
-window.lwfkit.lwf.rootMovie.gotoAndPlay(%d);
+window.lwfkit.lwf.%@.gotoAndPlay(%d);

@@ -12,6 +12,9 @@
 - (void)load:(NSString *)lwf completed:(void (^)())completed;
 - (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed;
 - (void)gotoAndPlayWithFrameLabel:(NSString *)label;
+- (void)gotoAndPlayWithFrameLabel:(NSString *)label instanceName:(NSString *)instanceName;
 - (void)gotoAndPlayWithFrameNumber:(NSUInteger)number;
+- (void)gotoAndPlayWithFrameNumber:(NSUInteger)number instanceName:(NSString *)instanceName;
 - (void)stop;
+- (void)stopWithInstanceName:(NSString *)instanceName;
 @end

@@ -1,2 +1,3 @@
-var frameNumber = window.lwfkit.lwf.searchFrame(window.lwfkit.lwf.rootMovie, '%@');
-window.lwfkit.lwf.rootMovie.gotoAndPlay(frameNumber);
+var instance = window.lwfkit.lwf.%@;
+var frameNumber = window.lwfkit.lwf.searchFrame(instance, '%@');
+instance.gotoAndPlay(frameNumber);

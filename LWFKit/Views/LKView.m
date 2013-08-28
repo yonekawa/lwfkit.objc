@@ -44,31 +44,52 @@ static NSString * const kLKStopScript = @"stop.js";
 
 - (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed
 {
-    NSString *path = [self pathForResource:kLKMainScript];
-    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *format = [self scriptFormatWithResourceName:kLKMainScript];
     NSString *script = [NSString stringWithFormat:format, lwf, prefix ? prefix : @""];
     [self evaluateScript:script sourceURL:kLKMainScript];
 }
 
 - (void)gotoAndPlayWithFrameLabel:(NSString *)label
 {
-    NSString *path = [self pathForResource:kLKGotoAndPlayWithFrameLabelScript];
-    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSString *script = [NSString stringWithFormat:format, label];
+    [self gotoAndPlayWithFrameLabel:label instanceName:@"rootMovie"];
+}
+
+- (void)gotoAndPlayWithFrameLabel:(NSString *)label instanceName:(NSString *)instanceName
+{
+    NSString *format = [self scriptFormatWithResourceName:kLKGotoAndPlayWithFrameLabelScript];
+    NSString *script = [NSString stringWithFormat:format, instanceName, label];
     [self evaluateScript:script sourceURL:kLKGotoAndPlayWithFrameLabelScript];
 }
 
 - (void)gotoAndPlayWithFrameNumber:(NSUInteger)number
 {
-    NSString *path = [self pathForResource:kLKGotoAndPlayWithFrameNumberScript];
-    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSString *script = [NSString stringWithFormat:format, number];
+    [self gotoAndPlayWithFrameNumber:number instanceName:@"rootMovie"];
+}
+
+- (void)gotoAndPlayWithFrameNumber:(NSUInteger)number instanceName:(NSString *)instanceName
+{
+    NSString *format = [self scriptFormatWithResourceName:kLKGotoAndPlayWithFrameNumberScript];
+    NSString *script = [NSString stringWithFormat:format, instanceName, number];
     [self evaluateScript:script sourceURL:kLKGotoAndPlayWithFrameNumberScript];
 }
 
 - (void)stop
 {
-    [self loadScriptAtPath:kLKStopScript];
+    [self stopWithInstanceName:@"rootMovie"];
+}
+
+- (void)stopWithInstanceName:(NSString *)instanceName
+{
+    NSString *script = [NSString stringWithFormat:[self scriptFormatWithResourceName:kLKStopScript], instanceName];
+    [self evaluateScript:script sourceURL:kLKStopScript];
+}
+
+#pragma mark - Private Methods
+
+- (NSString *)scriptFormatWithResourceName:(NSString *)name
+{
+    NSString *path = [self pathForResource:name];
+    return [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
 }
 
 @end

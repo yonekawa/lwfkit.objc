@@ -48,7 +48,7 @@
 
     NSString *path = [lwfMock pathForResource:@"goto_and_play_with_frame_label.js"];
     NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSString *script = [NSString stringWithFormat:format, @"jump"];
+    NSString *script = [NSString stringWithFormat:format, @"rootMovie", @"jump"];
     [[lwfMock expect] evaluateScript:script sourceURL:@"goto_and_play_with_frame_label.js"];
     [lwfMock gotoAndPlayWithFrameLabel:@"jump"];
     [lwfMock verify];
@@ -60,7 +60,7 @@
     
     NSString *path = [lwfMock pathForResource:@"goto_and_play_with_frame_number.js"];
     NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSString *script = [NSString stringWithFormat:format, 10];
+    NSString *script = [NSString stringWithFormat:format, @"rootMovie", 10];
     [[lwfMock expect] evaluateScript:script sourceURL:@"goto_and_play_with_frame_number.js"];
     [lwfMock gotoAndPlayWithFrameNumber:10];
     [lwfMock verify];
@@ -69,7 +69,11 @@
 - (void)testStop
 {
     id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
-    [[lwfMock expect] loadScriptAtPath:@"stop.js"];
+
+    NSString *path = [lwfMock pathForResource:@"stop.js"];
+    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *script = [NSString stringWithFormat:format, @"rootMovie"];
+    [[lwfMock expect] evaluateScript:script sourceURL:@"stop.js"];
     [lwfMock stop];
     [lwfMock verify];
 }

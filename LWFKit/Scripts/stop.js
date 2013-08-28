@@ -1,1 +1,1 @@
-window.lwfkit.lwf.rootMovie.stop();
+window.lwfkit.lwf.%@.stop();
