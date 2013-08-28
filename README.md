@@ -46,5 +46,5 @@ LWFKit is a framework to using [LWF](https://github.com/gree/lwf) on your Object
 MIT License
 
 ## References
-  [LWF](http://gree.github.io/lwf/)
+  [LWF](http://gree.github.io/lwf/)  
   [Ejecta](http://impactjs.com/ejecta)
