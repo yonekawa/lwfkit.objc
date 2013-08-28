@@ -31,5 +31,7 @@ cache.loadLWF({
   onload: function(lwf) {
     window.lwfkit.lwf = lwf;
     lwf.scaleForWidth(window.innerWidth);
+
+    new Ejecta.LKBridge().notify('onload');
   }
 });

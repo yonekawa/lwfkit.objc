@@ -16,6 +16,10 @@ static NSString * const kLKGotoAndPlayWithFrameNumberScript = @"goto_and_play_wi
 static NSString * const kLKGotoAndPlayWithFrameLabelScript = @"goto_and_play_with_frame_label.js";
 static NSString * const kLKStopScript = @"stop.js";
 
+@interface LKView()
+@property(nonatomic, strong) void (^onLoadBlock)();
+@end
+
 @implementation LKView
 
 - (id)init
@@ -44,10 +48,27 @@ static NSString * const kLKStopScript = @"stop.js";
 
 - (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed
 {
+    if (completed) {
+        self.onLoadBlock = completed;
+    }
+    
     NSString *format = [self scriptFormatWithResourceName:kLKMainScript];
     NSString *script = [NSString stringWithFormat:format, lwf, prefix ? prefix : @""];
     [self evaluateScript:script sourceURL:kLKMainScript];
 }
+
+#pragma mark - Bridge Methods
+
+- (void)notify:(NSString *)event
+{
+    if ([event isEqualToString:@"onload"]) {
+        if (self.onLoadBlock) {
+            self.onLoadBlock();
+        }
+    }
+}
+
+#pragma mark - Timeline Control Methods
 
 - (void)gotoAndPlayWithFrameLabel:(NSString *)label
 {

@@ -60,7 +60,7 @@
 		A41AA33D17CCC49B003DAE81 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */; };
 		A41AA34417CCCA3D003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA34317CCCA3D003DAE81 /* Scripts */; };
 		A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A41AA35417CDBA24003DAE81 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = A41AA35217CDBA24003DAE81 /* base64.c */; };
+		A41AA35417CDBA24003DAE81 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = A41AA35217CDBA24003DAE81 /* base64.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A41AA38017CDDA2D003DAE81 /* example.lwf in Resources */ = {isa = PBXBuildFile; fileRef = A41AA36E17CDDA2D003DAE81 /* example.lwf */; };
 		A41AA38117CDDA2D003DAE81 /* example_0.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA36F17CDDA2D003DAE81 /* example_0.png */; };
 		A41AA38217CDDA2D003DAE81 /* example_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA37017CDDA2D003DAE81 /* example_1.png */; };
@@ -94,6 +94,8 @@
 		A41AA4C217CE0A13003DAE81 /* example_28.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B417CE0A13003DAE81 /* example_28.png */; };
 		A41AA4C317CE0A13003DAE81 /* example_30.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B517CE0A13003DAE81 /* example_30.png */; };
 		A41AA4C417CE0A13003DAE81 /* example_31.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B617CE0A13003DAE81 /* example_31.png */; };
+		A41AA4C717CE12C9003DAE81 /* EJBindingLKBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA4C617CE12C9003DAE81 /* EJBindingLKBridge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA4C817CE12C9003DAE81 /* EJBindingLKBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA4C617CE12C9003DAE81 /* EJBindingLKBridge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D64017CCB679009CB1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D63F17CCB679009CB1B8 /* UIKit.framework */; };
 		A4B7D64217CCB679009CB1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64117CCB679009CB1B8 /* Foundation.framework */; };
 		A4B7D64417CCB679009CB1B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
@@ -286,6 +288,8 @@
 		A41AA4B417CE0A13003DAE81 /* example_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_28.png; sourceTree = "<group>"; };
 		A41AA4B517CE0A13003DAE81 /* example_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_30.png; sourceTree = "<group>"; };
 		A41AA4B617CE0A13003DAE81 /* example_31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_31.png; sourceTree = "<group>"; };
+		A41AA4C517CE12C9003DAE81 /* EJBindingLKBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLKBridge.h; sourceTree = "<group>"; };
+		A41AA4C617CE12C9003DAE81 /* EJBindingLKBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLKBridge.m; sourceTree = "<group>"; };
 		A4B7D63C17CCB679009CB1B8 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B7D63F17CCB679009CB1B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4B7D64117CCB679009CB1B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -609,6 +613,8 @@
 		A41AA39217CDE219003DAE81 /* Bindings */ = {
 			isa = PBXGroup;
 			children = (
+				A41AA4C517CE12C9003DAE81 /* EJBindingLKBridge.h */,
+				A41AA4C617CE12C9003DAE81 /* EJBindingLKBridge.m */,
 			);
 			path = Bindings;
 			sourceTree = "<group>";
@@ -1076,6 +1082,7 @@
 				A4B7D79F17CCB7CF009CB1B8 /* AppDelegate.m in Sources */,
 				A4B7D7A617CCB7CF009CB1B8 /* main.m in Sources */,
 				A4B7D7A717CCB7CF009CB1B8 /* MainViewController.m in Sources */,
+				A41AA33417CCC15A003DAE81 /* LKView.m in Sources */,
 				A4B7D7A917CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m in Sources */,
 				A4B7D7AA17CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m in Sources */,
 				A4B7D7AB17CCB7CF009CB1B8 /* EJBindingAudio.m in Sources */,
@@ -1121,8 +1128,8 @@
 				A4B7D7DB17CCB7CF009CB1B8 /* EJTimer.m in Sources */,
 				A4B7D7DF17CCB7CF009CB1B8 /* EJBindingHttpRequest.m in Sources */,
 				A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */,
-				A41AA33417CCC15A003DAE81 /* LKView.m in Sources */,
 				A41AA35417CDBA24003DAE81 /* base64.c in Sources */,
+				A41AA4C717CE12C9003DAE81 /* EJBindingLKBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1160,6 +1167,7 @@
 				A41AA2E617CCBBF8003DAE81 /* NSValue+Expecta.m in Sources */,
 				A41AA33517CCC15A003DAE81 /* LKView.m in Sources */,
 				A41AA33B17CCC3A7003DAE81 /* LKViewTest.m in Sources */,
+				A41AA4C817CE12C9003DAE81 /* EJBindingLKBridge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

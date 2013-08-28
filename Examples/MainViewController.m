@@ -23,7 +23,9 @@
     self.lwf = [[LKView alloc] initWithFrame:CGRectMake(0, 0, 100, 80)];
     self.lwf.center = self.view.center;
     self.lwf.frame = CGRectMake(self.lwf.frame.origin.x, self.lwf.frame.origin.y - 100, self.lwf.frame.size.width, self.lwf.frame.size.height);
-    [self.lwf load:@"example.lwf" completed:nil];
+    [self.lwf load:@"example.lwf" completed:^{
+        NSLog(@"loaded");
+    }];
     [self.view addSubview:self.lwf];
 
     UIButton *jumpButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];

@@ -9,8 +9,10 @@
 #import "EJJavaScriptView.h"
 
 @interface LKView : EJJavaScriptView
+- (void)notify:(NSString *)event;
 - (void)load:(NSString *)lwf completed:(void (^)())completed;
 - (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed;
+
 - (void)gotoAndPlayWithFrameLabel:(NSString *)label;
 - (void)gotoAndPlayWithFrameLabel:(NSString *)label instanceName:(NSString *)instanceName;
 - (void)gotoAndPlayWithFrameNumber:(NSUInteger)number;
