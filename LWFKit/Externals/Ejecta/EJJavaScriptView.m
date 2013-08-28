@@ -376,28 +376,6 @@ void EJBlockFunctionFinalize(JSObjectRef object) {
 
 
 #pragma mark -
-#pragma mark Touch handlers
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	[touchDelegate triggerEvent:@"touchstart" all:event.allTouches changed:touches remaining:event.allTouches];
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
-	NSMutableSet *remaining = [event.allTouches mutableCopy];
-	[remaining minusSet:touches];
-	
-	[touchDelegate triggerEvent:@"touchend" all:event.allTouches changed:touches remaining:remaining];
-	[remaining release];
-}
-
-- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
-	[self touchesEnded:touches withEvent:event];
-}
-
-- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-	[touchDelegate triggerEvent:@"touchmove" all:event.allTouches changed:touches remaining:event.allTouches];
-}
-
 
 //TODO: Does this belong in this class?
 #pragma mark

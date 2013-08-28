@@ -163,9 +163,6 @@
 		A4B7D7DA17CCB7CF009CB1B8 /* EJSharedOpenGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6F317CCB7CF009CB1B8 /* EJSharedOpenGLContext.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D7DB17CCB7CF009CB1B8 /* EJTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6F517CCB7CF009CB1B8 /* EJTimer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D7DF17CCB7CF009CB1B8 /* EJBindingHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D6FE17CCB7CF009CB1B8 /* EJBindingHttpRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A4B7D7E017CCB7CF009CB1B8 /* EJBindingKeyInput.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D70017CCB7CF009CB1B8 /* EJBindingKeyInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A4B7D7E217CCB7CF009CB1B8 /* EJBindingTouchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D70417CCB7CF009CB1B8 /* EJBindingTouchInput.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A4B7D7E417CCB7CF009CB1B8 /* EJBindingWindowEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D70817CCB7CF009CB1B8 /* EJBindingWindowEvents.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D7E817CCB7CF009CB1B8 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */; };
 		A4B7D84617CCB88A009CB1B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D84217CCB88A009CB1B8 /* InfoPlist.strings */; };
 		A4B7D84717CCB88A009CB1B8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D84417CCB88A009CB1B8 /* MainViewController.xib */; };
@@ -465,12 +462,6 @@
 		A4B7D6F517CCB7CF009CB1B8 /* EJTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJTimer.m; sourceTree = "<group>"; };
 		A4B7D6FD17CCB7CF009CB1B8 /* EJBindingHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingHttpRequest.h; sourceTree = "<group>"; };
 		A4B7D6FE17CCB7CF009CB1B8 /* EJBindingHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingHttpRequest.m; sourceTree = "<group>"; };
-		A4B7D6FF17CCB7CF009CB1B8 /* EJBindingKeyInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingKeyInput.h; sourceTree = "<group>"; };
-		A4B7D70017CCB7CF009CB1B8 /* EJBindingKeyInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingKeyInput.m; sourceTree = "<group>"; };
-		A4B7D70317CCB7CF009CB1B8 /* EJBindingTouchInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingTouchInput.h; sourceTree = "<group>"; };
-		A4B7D70417CCB7CF009CB1B8 /* EJBindingTouchInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingTouchInput.m; sourceTree = "<group>"; };
-		A4B7D70717CCB7CF009CB1B8 /* EJBindingWindowEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingWindowEvents.h; sourceTree = "<group>"; };
-		A4B7D70817CCB7CF009CB1B8 /* EJBindingWindowEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingWindowEvents.m; sourceTree = "<group>"; };
 		A4B7D71117CCB7CF009CB1B8 /* JavaScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScript.h; sourceTree = "<group>"; };
 		A4B7D71217CCB7CF009CB1B8 /* JavaScriptCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptCore.h; sourceTree = "<group>"; };
 		A4B7D71317CCB7CF009CB1B8 /* JSBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSBase.h; sourceTree = "<group>"; };
@@ -988,12 +979,6 @@
 				A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */,
 				A4B7D6FD17CCB7CF009CB1B8 /* EJBindingHttpRequest.h */,
 				A4B7D6FE17CCB7CF009CB1B8 /* EJBindingHttpRequest.m */,
-				A4B7D6FF17CCB7CF009CB1B8 /* EJBindingKeyInput.h */,
-				A4B7D70017CCB7CF009CB1B8 /* EJBindingKeyInput.m */,
-				A4B7D70317CCB7CF009CB1B8 /* EJBindingTouchInput.h */,
-				A4B7D70417CCB7CF009CB1B8 /* EJBindingTouchInput.m */,
-				A4B7D70717CCB7CF009CB1B8 /* EJBindingWindowEvents.h */,
-				A4B7D70817CCB7CF009CB1B8 /* EJBindingWindowEvents.m */,
 			);
 			path = EJUtils;
 			sourceTree = "<group>";
@@ -1267,9 +1252,6 @@
 				A4B7D7DA17CCB7CF009CB1B8 /* EJSharedOpenGLContext.m in Sources */,
 				A4B7D7DB17CCB7CF009CB1B8 /* EJTimer.m in Sources */,
 				A4B7D7DF17CCB7CF009CB1B8 /* EJBindingHttpRequest.m in Sources */,
-				A4B7D7E017CCB7CF009CB1B8 /* EJBindingKeyInput.m in Sources */,
-				A4B7D7E217CCB7CF009CB1B8 /* EJBindingTouchInput.m in Sources */,
-				A4B7D7E417CCB7CF009CB1B8 /* EJBindingWindowEvents.m in Sources */,
 				A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */,
 				A41AA33417CCC15A003DAE81 /* LKView.m in Sources */,
 				A41AA35417CDBA24003DAE81 /* base64.c in Sources */,
