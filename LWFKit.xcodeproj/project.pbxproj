@@ -90,6 +90,7 @@
 		A41AA33D17CCC49B003DAE81 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */; };
 		A41AA34417CCCA3D003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA34317CCCA3D003DAE81 /* Scripts */; };
 		A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A41AA35417CDBA24003DAE81 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = A41AA35217CDBA24003DAE81 /* base64.c */; };
 		A4B7D64017CCB679009CB1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D63F17CCB679009CB1B8 /* UIKit.framework */; };
 		A4B7D64217CCB679009CB1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64117CCB679009CB1B8 /* Foundation.framework */; };
 		A4B7D64417CCB679009CB1B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
@@ -315,6 +316,8 @@
 		A41AA34317CCCA3D003DAE81 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		A41AA34517CCD0C4003DAE81 /* EJBindingLocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLocalStorage.h; sourceTree = "<group>"; };
 		A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLocalStorage.m; sourceTree = "<group>"; };
+		A41AA35217CDBA24003DAE81 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
+		A41AA35317CDBA24003DAE81 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
 		A4B7D63C17CCB679009CB1B8 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B7D63F17CCB679009CB1B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4B7D64117CCB679009CB1B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -760,6 +763,8 @@
 			children = (
 				A4B7D68B17CCB7CF009CB1B8 /* Ejecta */,
 				A4B7D71017CCB7CF009CB1B8 /* JavaScriptCore */,
+				A41AA35217CDBA24003DAE81 /* base64.c */,
+				A41AA35317CDBA24003DAE81 /* base64.h */,
 				A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */,
 			);
 			path = Externals;
@@ -1185,6 +1190,7 @@
 				A4B7D7E417CCB7CF009CB1B8 /* EJBindingWindowEvents.m in Sources */,
 				A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */,
 				A41AA33417CCC15A003DAE81 /* LKView.m in Sources */,
+				A41AA35417CDBA24003DAE81 /* base64.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

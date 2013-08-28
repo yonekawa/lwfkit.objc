@@ -155,7 +155,7 @@ EJ_BIND_FUNCTION(removeEventListener, ctx, argc, argv) {
 	type:(NSString *)type
 	target:(JSObjectRef)target
 {
-	EJBindingEvent *event = [[self alloc] initWithContext:ctx argc:0 argv:NULL];
+	EJBindingEvent *event = [[[self alloc] initWithContext:ctx argc:0 argv:NULL] autorelease];
 	JSValueProtect(ctx, target);
 	event->jsTarget = target;
 	event->type = [type retain];

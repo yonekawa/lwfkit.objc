@@ -294,8 +294,8 @@ typedef struct {
 	
     uint32_t formatFlags = header->flags & PVR_TEXTURE_FLAG_TYPE_MASK;
 	
-	GLenum internalFormat;
-	uint32_t bpp;
+	GLenum internalFormat = 0;
+	uint32_t bpp = 1;
 	
 	if( formatFlags == kPVRTextureFlagTypePVRTC_4 ) {
 		internalFormat = GL_COMPRESSED_RGBA_PVRTC_4BPPV1_IMG;
