@@ -10,13 +10,16 @@
 - (id)initWithFrame:(CGRect)frame contentScale:(float)contentScale retainedBacking:(BOOL)retainedBacking {
 	if( self = [super initWithFrame:frame] ) {
 		[self setMultipleTouchEnabled:YES];
+		[self setBackgroundColor:[UIColor clearColor]];
+		[self setOpaque:NO];
 		
 		CAEAGLLayer *eaglLayer = (CAEAGLLayer *)self.layer;
 		
 		self.contentScaleFactor = contentScale;
 		eaglLayer.contentsScale = contentScale;
 
-		eaglLayer.opaque = TRUE;
+		eaglLayer.opaque = FALSE;
+		eaglLayer.backgroundColor = [[UIColor clearColor] CGColor];
 		
 		eaglLayer.drawableProperties = @{
 			kEAGLDrawablePropertyRetainedBacking: @(retainedBacking),
