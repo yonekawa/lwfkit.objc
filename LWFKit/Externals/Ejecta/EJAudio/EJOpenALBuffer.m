@@ -2,6 +2,7 @@
 
 #import <AudioToolbox/AudioToolbox.h>
 #import <AudioToolbox/ExtendedAudioFile.h>
+#import "EJAppViewController.h"
 #import "EJJavaScriptView.h"
 
 @implementation EJOpenALBuffer

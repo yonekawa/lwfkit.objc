@@ -9,7 +9,7 @@
 
 + (id)descriptorWithName:(NSString *)name size:(float)size {
 	// Check if the font exists
-	if( ![UIFont fontWithName:name size:size] ) {
+	if( !name.length || ![UIFont fontWithName:name size:size] ) {
 		return NULL;
 	}
 	
@@ -257,7 +257,7 @@ int EJFontGlyphLayoutSortByTextureIndex(const void *a, const void *b) {
 	// descending characters or not.
 	// So, we have to collect those infos ourselfs from the glyphs.
 	EJTextMetrics metrics = {
-		.width = (float)(CTLineGetTypographicBounds(line, NULL, NULL, NULL)),
+		.width = CTLineGetTypographicBounds(line, NULL, NULL, NULL),
 		.ascent = 0,
 		.descent = 0,
 	};

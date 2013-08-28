@@ -2,12 +2,21 @@
 
 #import <netinet/in.h>
 #import <sys/utsname.h>
+#import <sys/types.h>
+#import <sys/sysctl.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <AVFoundation/AVFoundation.h>
 
 #import "EJJavaScriptView.h"
 
 @implementation EJBindingEjectaCore
+
+- (id)initWithContext:(JSContextRef)ctx argc:(size_t)argc argv:(const JSValueRef [])argv {
+	if( self = [super initWithContext:ctx argc:argc argv:argv] ) {
+		baseTime = [NSDate timeIntervalSinceReferenceDate];
+	}
+	return self;
+}
 
 - (NSString*) deviceName {
 	struct utsname systemInfo;
@@ -42,6 +51,23 @@ EJ_BIND_FUNCTION(log, ctx, argc, argv ) {
 	return NULL;
 }
 
+EJ_BIND_FUNCTION(load, ctx, argc, argv ) {
+	if( argc < 1 ) return NULL;
+	
+	NSObject<UIApplicationDelegate> *app = [[UIApplication sharedApplication] delegate];
+	if( [app respondsToSelector:@selector(loadViewControllerWithScriptAtPath:)] ) {
+		// Queue up the loading till the next frame; the script view may be in the
+		// midst of a timer update
+		[app performSelectorOnMainThread:@selector(loadViewControllerWithScriptAtPath:)
+			withObject:JSValueToNSString(ctx, argv[0]) waitUntilDone:NO];
+	}
+	else {
+		NSLog(@"Error: Current UIApplicationDelegate does not support loadViewControllerWithScriptAtPath.");
+	}
+	
+	return NULL;
+}
+
 EJ_BIND_FUNCTION(include, ctx, argc, argv ) {
 	if( argc < 1 ) { return NULL; }
 
@@ -62,15 +88,6 @@ EJ_BIND_FUNCTION(requireModule, ctx, argc, argv ) {
 	if( argc < 3 ) { return NULL; }
 	
 	return [scriptView loadModuleWithId:JSValueToNSString(ctx, argv[0]) module:argv[1] exports:argv[2]];
-}
-
-EJ_BIND_FUNCTION(require, ctx, argc, argv ) {
-	// TODO: remove entirely for next release
-	if( argc < 1 ) { return NULL; }
-	NSLog(@"Warning: ejecta.require() is deprecated. Use ejecta.include() instead.");
-	
-	[scriptView loadScriptAtPath:JSValueToNSString(ctx, argv[0])];
-	return NULL;
 }
 
 EJ_BIND_FUNCTION(openURL, ctx, argc, argv ) {
@@ -151,6 +168,10 @@ EJ_BIND_FUNCTION(clearInterval, ctx, argc, argv ) {
 	return [scriptView deleteTimer:ctx argc:argc argv:argv];
 }
 
+EJ_BIND_FUNCTION(performanceNow, ctx, argc, argv ) {
+	NSTimeInterval now = [NSDate timeIntervalSinceReferenceDate];
+	return JSValueMakeNumber(ctx, (now - baseTime) * 1000.0);
+}
 
 EJ_BIND_GET(devicePixelRatio, ctx ) {
 	return JSValueMakeNumber( ctx, [UIScreen mainScreen].scale );
@@ -169,6 +190,13 @@ EJ_BIND_GET(userAgent, ctx ) {
 		ctx,
 		[NSString stringWithFormat: @"Ejecta/%@ (%@; OS %@)", EJECTA_VERSION, [self deviceName], [[UIDevice currentDevice] systemVersion]]
 	);
+}
+
+EJ_BIND_GET(platform, ctx ) {
+	char machine[32];
+	size_t size = sizeof(machine);
+    sysctlbyname("hw.machine", machine, &size, NULL, 0);
+	return NSStringToJSValue(ctx, [NSString stringWithUTF8String:machine] );
 }
 
 EJ_BIND_GET(language, ctx) {

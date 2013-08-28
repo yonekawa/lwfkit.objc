@@ -5,6 +5,21 @@
 #import <objc/runtime.h>
 
 
+// Block function callbacks
+JSValueRef EJBlockFunctionCallAsFunction(
+	JSContextRef ctx, JSObjectRef function, JSObjectRef thisObject, size_t argc, const JSValueRef argv[], JSValueRef* exception
+) {
+	JSValueRef (^block)(JSContextRef ctx, size_t argc, const JSValueRef argv[]) = JSObjectGetPrivate(function);
+	JSValueRef ret = block(ctx, argc, argv);
+	return ret ? ret : JSValueMakeUndefined(ctx);
+}
+
+void EJBlockFunctionFinalize(JSObjectRef object) {
+	JSValueRef (^block)(JSContextRef ctx, size_t argc, const JSValueRef argv[]) = JSObjectGetPrivate(object);
+	[block release];
+}
+
+
 #pragma mark -
 #pragma mark Ejecta view Implementation
 
@@ -110,6 +125,9 @@
 	[openALManager release];
 	[classLoader release];
 	
+	if( jsBlockFunctionClass ) {
+		JSClassRelease(jsBlockFunctionClass);
+	}
 	[screenRenderingContext finish];
 	[screenRenderingContext release];
 	[currentRenderingContext release];
@@ -122,6 +140,7 @@
 	
 	[openGLContext release];
 	[appFolder release];
+	[proxy release];
 	[super dealloc];
 }
 
@@ -282,6 +301,20 @@
 	JSStringRelease( jsFilePropertyName );
 }
 
+- (JSValueRef)jsValueForPath:(NSString *)objectPath {
+	JSValueRef obj = JSContextGetGlobalObject( jsGlobalContext  );
+	
+	NSArray *pathComponents = [objectPath componentsSeparatedByString:@"."];
+	for( NSString *p in pathComponents) {
+		JSStringRef name = JSStringCreateWithCFString((CFStringRef)p);
+		obj = JSObjectGetProperty( jsGlobalContext, (JSObjectRef)obj, name, NULL);
+		JSStringRelease(name);
+		
+		if( !obj ) { break; }
+	}
+	return obj;
+}
+
 
 #pragma mark -
 #pragma mark Run loop
@@ -392,6 +425,17 @@
 	
 	[timers cancelId:JSValueToNumberFast(ctxp, argv[0])];
 	return NULL;
+}
+
+- (JSObjectRef)createFunctionWithBlock:(JSValueRef (^)(JSContextRef ctx, size_t argc, const JSValueRef argv[]))block {
+	if( !jsBlockFunctionClass ) {
+		JSClassDefinition blockFunctionClassDef = kJSClassDefinitionEmpty;
+		blockFunctionClassDef.callAsFunction = EJBlockFunctionCallAsFunction;
+		blockFunctionClassDef.finalize = EJBlockFunctionFinalize;
+		jsBlockFunctionClass = JSClassCreate(&blockFunctionClassDef);
+	}
+	
+	return JSObjectMake( jsGlobalContext, jsBlockFunctionClass, (void *)Block_copy(block) );
 }
 
 @end

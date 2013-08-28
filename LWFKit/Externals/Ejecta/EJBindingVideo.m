@@ -135,19 +135,19 @@ EJ_BIND_SET(src, ctx, value) {
 - (void)preparedToPlayChange:(MPMoviePlayerController *)moviePlayer {
 	if( player.isPreparedToPlay && !loaded ) {
 		loaded = YES;
-		[self triggerEvent:@"canplaythrough" argc:0 argv:NULL];
-		[self triggerEvent:@"loadedmetadata" argc:0 argv:NULL];
+		[self triggerEvent:@"canplaythrough"];
+		[self triggerEvent:@"loadedmetadata"];
 	}
 }
 
 - (void)didTap:(UIGestureRecognizer *)gestureRecognizer {
-	[self triggerEvent:@"click" argc:0 argv:NULL];
+	[self triggerEvent:@"click"];
 }
 
 - (void)didFinish:(MPMoviePlayerController *)moviePlayer {
 	player.fullscreen = NO;
 	[player.view removeFromSuperview];
-	[self triggerEvent:@"ended" argc:0 argv:NULL];
+	[self triggerEvent:@"ended"];
 }
 
 EJ_BIND_GET(ended, ctx) {
@@ -186,13 +186,13 @@ EJ_BIND_FUNCTION(load, ctx, argc, argv) {
 }
 
 EJ_BIND_FUNCTION(canPlayType, ctx, argc, argv) {
-	if( argc != 1 ) return NULL;
+	if( argc != 1 ) return NSStringToJSValue(ctx, @"");
 	
 	NSString *mime = JSValueToNSString(ctx, argv[0]);
 	if( [mime hasPrefix:@"video/mp4"] ) {
 		return NSStringToJSValue(ctx, @"probably");
 	}
-	return NULL;
+	return NSStringToJSValue(ctx, @"");
 }
 
 EJ_BIND_EVENT(canplaythrough);

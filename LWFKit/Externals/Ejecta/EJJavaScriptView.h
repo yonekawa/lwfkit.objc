@@ -10,7 +10,7 @@
 #import "EJSharedOpenGLContext.h"
 #import "EJNonRetainingProxy.h"
 
-#define EJECTA_VERSION @"1.3"
+#define EJECTA_VERSION @"1.4"
 #define EJECTA_DEFAULT_APP_FOLDER @"App/"
 
 #define EJECTA_BOOT_JS @"../Ejecta.js"
@@ -64,6 +64,7 @@
 	EJCanvasContext<EJPresentable> *screenRenderingContext;
 
 	NSOperationQueue *backgroundQueue;
+	JSClassRef jsBlockFunctionClass;
 	
 	// Public for fast access in bound functions
 	@public JSValueRef jsUndefined;
@@ -93,6 +94,7 @@
 - (void)loadScriptAtPath:(NSString *)path;
 - (JSValueRef)evaluateScript:(NSString *)script;
 - (JSValueRef)evaluateScript:(NSString *)script sourceURL:(NSString *)sourceURL;
+- (JSValueRef)jsValueForPath:(NSString *)objectPath;
 
 - (void)clearCaches;
 
@@ -101,5 +103,6 @@
 - (JSValueRef)deleteTimer:(JSContextRef)ctx argc:(size_t)argc argv:(const JSValueRef [])argv;
 - (JSValueRef)loadModuleWithId:(NSString *)moduleId module:(JSValueRef)module exports:(JSValueRef)exports;
 - (JSValueRef)createTimer:(JSContextRef)ctxp argc:(size_t)argc argv:(const JSValueRef [])argv repeat:(BOOL)repeat;
+- (JSObjectRef)createFunctionWithBlock:(JSValueRef (^)(JSContextRef ctx, size_t argc, const JSValueRef argv[]))block;
 
 @end

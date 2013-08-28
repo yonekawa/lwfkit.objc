@@ -6,6 +6,7 @@
 
 // Make 'window' the global scope
 self = window = this;
+window.top = window.parent = window;
 
 (function(window) {
 
@@ -26,6 +27,7 @@ window.navigator = {
 	language: ej.language,
 	userAgent: ej.userAgent,
 	appVersion: ej.appVersion,
+	platform: ej.platform,
 	get onLine() { return ej.onLine; } // re-evaluate on each get
 };
 
@@ -71,11 +73,15 @@ window.require = function( name ) {
 };
 
 // Timers
+window.performance = {now: function() {return ej.performanceNow();} };
 window.setTimeout = function(cb, t){ return ej.setTimeout(cb, t); };
 window.setInterval = function(cb, t){ return ej.setInterval(cb, t); };
 window.clearTimeout = function(id){ return ej.clearTimeout(id); };
 window.clearInterval = function(id){ return ej.clearInterval(id); };
-window.requestAnimationFrame = function(cb, element){ return ej.setTimeout(cb, 16); };
+window.requestAnimationFrame = function(cb, element){
+	return ej.setTimeout(function(){ cb(ej.performanceNow()); }, 16);
+};
+
 
 
 // The native Image, Audio, HttpRequest and LocalStorage class mimic the real elements
@@ -207,6 +213,9 @@ var eventInit = document._eventInitializers;
 
 
 // Touch events
+
+// Set touch event properties for feature detection
+window.ontouchstart = window.ontouchend = window.ontouchmove = null;
 
 // Setting up the 'event' object for touch events in native code is quite
 // a bit of work, so instead we do it here in JavaScript and have the native
