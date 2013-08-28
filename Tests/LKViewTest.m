@@ -32,10 +32,37 @@
 {
     id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
 
-    NSString *script = [lwfMock performSelector:@selector(mainScriptForLWF:prefix:) withObject:@"test" withObject:@""];
-    [[lwfMock expect] evaluateScript:script sourceURL:@"main.js"];
-    [lwfMock load:@"test" completed:nil];
+    NSString *path = [lwfMock pathForResource:@"main.js"];
+    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *script = [NSString stringWithFormat:format, @"test.lwf", @""];
 
+    [[lwfMock expect] evaluateScript:script sourceURL:@"main.js"];
+    [lwfMock load:@"test.lwf" completed:nil];
+
+    [lwfMock verify];
+}
+
+- (void)testGotoAndPlayWithFrameLabel
+{
+    id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
+
+    NSString *path = [lwfMock pathForResource:@"goto_and_play_with_frame_label.js"];
+    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *script = [NSString stringWithFormat:format, @"jump"];
+    [[lwfMock expect] evaluateScript:script sourceURL:@"goto_and_play_with_frame_label.js"];
+    [lwfMock gotoAndPlayWithFrameLabel:@"jump"];
+    [lwfMock verify];
+}
+
+- (void)testGotoAndPlayWithFrameNumber
+{
+    id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
+    
+    NSString *path = [lwfMock pathForResource:@"goto_and_play_with_frame_number.js"];
+    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *script = [NSString stringWithFormat:format, 10];
+    [[lwfMock expect] evaluateScript:script sourceURL:@"goto_and_play_with_frame_number.js"];
+    [lwfMock gotoAndPlayWithFrameNumber:10];
     [lwfMock verify];
 }
 

@@ -80,6 +80,20 @@
 		A41AA39017CDDA2D003DAE81 /* example_8.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA37E17CDDA2D003DAE81 /* example_8.png */; };
 		A41AA39117CDDA2D003DAE81 /* example_9.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA37F17CDDA2D003DAE81 /* example_9.png */; };
 		A41AA4A717CDFB30003DAE81 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32917CCBDB2003DAE81 /* libstdc++.dylib */; };
+		A41AA4B717CE0A13003DAE81 /* example_17.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4A917CE0A13003DAE81 /* example_17.png */; };
+		A41AA4B817CE0A13003DAE81 /* example_18.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4AA17CE0A13003DAE81 /* example_18.png */; };
+		A41AA4B917CE0A13003DAE81 /* example_19.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4AB17CE0A13003DAE81 /* example_19.png */; };
+		A41AA4BA17CE0A13003DAE81 /* example_20.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4AC17CE0A13003DAE81 /* example_20.png */; };
+		A41AA4BB17CE0A13003DAE81 /* example_21.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4AD17CE0A13003DAE81 /* example_21.png */; };
+		A41AA4BC17CE0A13003DAE81 /* example_22.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4AE17CE0A13003DAE81 /* example_22.png */; };
+		A41AA4BD17CE0A13003DAE81 /* example_23.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4AF17CE0A13003DAE81 /* example_23.png */; };
+		A41AA4BE17CE0A13003DAE81 /* example_24.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B017CE0A13003DAE81 /* example_24.png */; };
+		A41AA4BF17CE0A13003DAE81 /* example_25.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B117CE0A13003DAE81 /* example_25.png */; };
+		A41AA4C017CE0A13003DAE81 /* example_26.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B217CE0A13003DAE81 /* example_26.png */; };
+		A41AA4C117CE0A13003DAE81 /* example_27.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B317CE0A13003DAE81 /* example_27.png */; };
+		A41AA4C217CE0A13003DAE81 /* example_28.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B417CE0A13003DAE81 /* example_28.png */; };
+		A41AA4C317CE0A13003DAE81 /* example_30.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B517CE0A13003DAE81 /* example_30.png */; };
+		A41AA4C417CE0A13003DAE81 /* example_31.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B617CE0A13003DAE81 /* example_31.png */; };
 		A4B7D64017CCB679009CB1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D63F17CCB679009CB1B8 /* UIKit.framework */; };
 		A4B7D64217CCB679009CB1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64117CCB679009CB1B8 /* Foundation.framework */; };
 		A4B7D64417CCB679009CB1B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
@@ -258,6 +272,20 @@
 		A41AA4A317CDF276003DAE81 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMock.h; sourceTree = "<group>"; };
 		A41AA4A417CDF276003DAE81 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockObject.h; sourceTree = "<group>"; };
 		A41AA4A517CDF276003DAE81 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCMockRecorder.h; sourceTree = "<group>"; };
+		A41AA4A917CE0A13003DAE81 /* example_17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_17.png; sourceTree = "<group>"; };
+		A41AA4AA17CE0A13003DAE81 /* example_18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_18.png; sourceTree = "<group>"; };
+		A41AA4AB17CE0A13003DAE81 /* example_19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_19.png; sourceTree = "<group>"; };
+		A41AA4AC17CE0A13003DAE81 /* example_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_20.png; sourceTree = "<group>"; };
+		A41AA4AD17CE0A13003DAE81 /* example_21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_21.png; sourceTree = "<group>"; };
+		A41AA4AE17CE0A13003DAE81 /* example_22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_22.png; sourceTree = "<group>"; };
+		A41AA4AF17CE0A13003DAE81 /* example_23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_23.png; sourceTree = "<group>"; };
+		A41AA4B017CE0A13003DAE81 /* example_24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_24.png; sourceTree = "<group>"; };
+		A41AA4B117CE0A13003DAE81 /* example_25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_25.png; sourceTree = "<group>"; };
+		A41AA4B217CE0A13003DAE81 /* example_26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_26.png; sourceTree = "<group>"; };
+		A41AA4B317CE0A13003DAE81 /* example_27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_27.png; sourceTree = "<group>"; };
+		A41AA4B417CE0A13003DAE81 /* example_28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_28.png; sourceTree = "<group>"; };
+		A41AA4B517CE0A13003DAE81 /* example_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_30.png; sourceTree = "<group>"; };
+		A41AA4B617CE0A13003DAE81 /* example_31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_31.png; sourceTree = "<group>"; };
 		A4B7D63C17CCB679009CB1B8 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B7D63F17CCB679009CB1B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4B7D64117CCB679009CB1B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -542,6 +570,20 @@
 		A41AA36D17CDDA2D003DAE81 /* example.lwfdata */ = {
 			isa = PBXGroup;
 			children = (
+				A41AA4A917CE0A13003DAE81 /* example_17.png */,
+				A41AA4AA17CE0A13003DAE81 /* example_18.png */,
+				A41AA4AB17CE0A13003DAE81 /* example_19.png */,
+				A41AA4AC17CE0A13003DAE81 /* example_20.png */,
+				A41AA4AD17CE0A13003DAE81 /* example_21.png */,
+				A41AA4AE17CE0A13003DAE81 /* example_22.png */,
+				A41AA4AF17CE0A13003DAE81 /* example_23.png */,
+				A41AA4B017CE0A13003DAE81 /* example_24.png */,
+				A41AA4B117CE0A13003DAE81 /* example_25.png */,
+				A41AA4B217CE0A13003DAE81 /* example_26.png */,
+				A41AA4B317CE0A13003DAE81 /* example_27.png */,
+				A41AA4B417CE0A13003DAE81 /* example_28.png */,
+				A41AA4B517CE0A13003DAE81 /* example_30.png */,
+				A41AA4B617CE0A13003DAE81 /* example_31.png */,
 				A41AA36E17CDDA2D003DAE81 /* example.lwf */,
 				A41AA36F17CDDA2D003DAE81 /* example_0.png */,
 				A41AA37017CDDA2D003DAE81 /* example_1.png */,
@@ -983,6 +1025,20 @@
 				A41AA38F17CDDA2D003DAE81 /* example_7.png in Resources */,
 				A41AA39017CDDA2D003DAE81 /* example_8.png in Resources */,
 				A41AA39117CDDA2D003DAE81 /* example_9.png in Resources */,
+				A41AA4B717CE0A13003DAE81 /* example_17.png in Resources */,
+				A41AA4B817CE0A13003DAE81 /* example_18.png in Resources */,
+				A41AA4B917CE0A13003DAE81 /* example_19.png in Resources */,
+				A41AA4BA17CE0A13003DAE81 /* example_20.png in Resources */,
+				A41AA4BB17CE0A13003DAE81 /* example_21.png in Resources */,
+				A41AA4BC17CE0A13003DAE81 /* example_22.png in Resources */,
+				A41AA4BD17CE0A13003DAE81 /* example_23.png in Resources */,
+				A41AA4BE17CE0A13003DAE81 /* example_24.png in Resources */,
+				A41AA4BF17CE0A13003DAE81 /* example_25.png in Resources */,
+				A41AA4C017CE0A13003DAE81 /* example_26.png in Resources */,
+				A41AA4C117CE0A13003DAE81 /* example_27.png in Resources */,
+				A41AA4C217CE0A13003DAE81 /* example_28.png in Resources */,
+				A41AA4C317CE0A13003DAE81 /* example_30.png in Resources */,
+				A41AA4C417CE0A13003DAE81 /* example_31.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
