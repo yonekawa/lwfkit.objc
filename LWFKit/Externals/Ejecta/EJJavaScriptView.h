@@ -5,7 +5,6 @@
 #import "EJCanvasContext.h"
 #import "EJPresentable.h"
 
-#import "EJSharedOpenALManager.h"
 #import "EJSharedTextureCache.h"
 #import "EJSharedOpenGLContext.h"
 #import "EJNonRetainingProxy.h"
@@ -51,7 +50,6 @@
 	
 	EJSharedOpenGLContext *openGLContext;
 	EJSharedTextureCache *textureCache;
-	EJSharedOpenALManager *openALManager;
 	
 	EJCanvasContext *currentRenderingContext;
 	EAGLContext *glCurrentContext;

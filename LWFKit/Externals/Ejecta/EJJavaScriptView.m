@@ -85,7 +85,6 @@ void EJBlockFunctionFinalize(JSObjectRef object) {
 		// Retain the caches here, so even if they're currently unused in JavaScript,
 		// they will persist until the last scriptView is released
 		textureCache = [[EJSharedTextureCache instance] retain];
-		openALManager = [[EJSharedOpenALManager instance] retain];
 		openGLContext = [[EJSharedOpenGLContext instance] retain];
 		
 		// Create the OpenGL context for Canvas2D
@@ -122,7 +121,6 @@ void EJBlockFunctionFinalize(JSObjectRef object) {
 	[displayLink release];
 	
 	[textureCache release];
-	[openALManager release];
 	[classLoader release];
 	
 	if( jsBlockFunctionClass ) {

@@ -42,14 +42,11 @@
 		A41AA31417CCBC7B003DAE81 /* Texture.fsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6CA17CCB7CF009CB1B8 /* Texture.fsh */; };
 		A41AA31517CCBC7B003DAE81 /* Vertex.vsh in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D6CB17CCB7CF009CB1B8 /* Vertex.vsh */; };
 		A41AA31817CCBCB9003DAE81 /* Ejecta.js in Resources */ = {isa = PBXBuildFile; fileRef = A41AA31617CCBC8F003DAE81 /* Ejecta.js */; };
-		A41AA31A17CCBD4A003DAE81 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31917CCBD4A003DAE81 /* AudioToolbox.framework */; };
-		A41AA31C17CCBD4E003DAE81 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31B17CCBD4E003DAE81 /* AVFoundation.framework */; };
 		A41AA31E17CCBD56003DAE81 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31D17CCBD56003DAE81 /* OpenGLES.framework */; };
 		A41AA32017CCBD61003DAE81 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA31F17CCBD61003DAE81 /* CFNetwork.framework */; };
 		A41AA32217CCBD67003DAE81 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32117CCBD67003DAE81 /* CoreText.framework */; };
 		A41AA32417CCBD6F003DAE81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32317CCBD6E003DAE81 /* QuartzCore.framework */; };
 		A41AA32617CCBD74003DAE81 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32517CCBD74003DAE81 /* SystemConfiguration.framework */; };
-		A41AA32817CCBD88003DAE81 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32717CCBD88003DAE81 /* OpenAL.framework */; };
 		A41AA32A17CCBDB2003DAE81 /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32917CCBDB2003DAE81 /* libstdc++.dylib */; };
 		A41AA32C17CCBDBB003DAE81 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A41AA32B17CCBDBB003DAE81 /* libicucore.dylib */; };
 		A41AA32D17CCBE6C003DAE81 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D83E17CCB879009CB1B8 /* InfoPlist.strings */; };
@@ -108,11 +105,6 @@
 		A4B7D7A217CCB7CF009CB1B8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A4B7D67F17CCB7CF009CB1B8 /* Default@2x.png */; };
 		A4B7D7A617CCB7CF009CB1B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D68617CCB7CF009CB1B8 /* main.m */; };
 		A4B7D7A717CCB7CF009CB1B8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D68817CCB7CF009CB1B8 /* MainViewController.m */; };
-		A4B7D7A917CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69117CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A4B7D7AA17CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69317CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A4B7D7AB17CCB7CF009CB1B8 /* EJBindingAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69517CCB7CF009CB1B8 /* EJBindingAudio.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A4B7D7AC17CCB7CF009CB1B8 /* EJOpenALBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69717CCB7CF009CB1B8 /* EJOpenALBuffer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A4B7D7AD17CCB7CF009CB1B8 /* EJSharedOpenALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69917CCB7CF009CB1B8 /* EJSharedOpenALManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D7AE17CCB7CF009CB1B8 /* EJBindingBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69B17CCB7CF009CB1B8 /* EJBindingBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D7AF17CCB7CF009CB1B8 /* EJBindingEjectaCore.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69D17CCB7CF009CB1B8 /* EJBindingEjectaCore.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A4B7D7B017CCB7CF009CB1B8 /* EJBindingEventedBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7D69F17CCB7CF009CB1B8 /* EJBindingEventedBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -230,14 +222,11 @@
 		A41AA29C17CCBBF8003DAE81 /* NSValue+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+Expecta.h"; sourceTree = "<group>"; };
 		A41AA29D17CCBBF8003DAE81 /* NSValue+Expecta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSValue+Expecta.m"; sourceTree = "<group>"; };
 		A41AA31617CCBC8F003DAE81 /* Ejecta.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Ejecta.js; sourceTree = "<group>"; };
-		A41AA31917CCBD4A003DAE81 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A41AA31B17CCBD4E003DAE81 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A41AA31D17CCBD56003DAE81 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		A41AA31F17CCBD61003DAE81 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A41AA32117CCBD67003DAE81 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		A41AA32317CCBD6E003DAE81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		A41AA32517CCBD74003DAE81 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A41AA32717CCBD88003DAE81 /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
 		A41AA32917CCBDB2003DAE81 /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
 		A41AA32B17CCBDBB003DAE81 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		A41AA33217CCC15A003DAE81 /* LKView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKView.h; sourceTree = "<group>"; };
@@ -306,17 +295,6 @@
 		A4B7D68617CCB7CF009CB1B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4B7D68717CCB7CF009CB1B8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		A4B7D68817CCB7CF009CB1B8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		A4B7D68F17CCB7CF009CB1B8 /* EJAudioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSource.h; sourceTree = "<group>"; };
-		A4B7D69017CCB7CF009CB1B8 /* EJAudioSourceAVAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSourceAVAudio.h; sourceTree = "<group>"; };
-		A4B7D69117CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAudioSourceAVAudio.m; sourceTree = "<group>"; };
-		A4B7D69217CCB7CF009CB1B8 /* EJAudioSourceOpenAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJAudioSourceOpenAL.h; sourceTree = "<group>"; };
-		A4B7D69317CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJAudioSourceOpenAL.m; sourceTree = "<group>"; };
-		A4B7D69417CCB7CF009CB1B8 /* EJBindingAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingAudio.h; sourceTree = "<group>"; };
-		A4B7D69517CCB7CF009CB1B8 /* EJBindingAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingAudio.m; sourceTree = "<group>"; };
-		A4B7D69617CCB7CF009CB1B8 /* EJOpenALBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJOpenALBuffer.h; sourceTree = "<group>"; };
-		A4B7D69717CCB7CF009CB1B8 /* EJOpenALBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJOpenALBuffer.m; sourceTree = "<group>"; };
-		A4B7D69817CCB7CF009CB1B8 /* EJSharedOpenALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJSharedOpenALManager.h; sourceTree = "<group>"; };
-		A4B7D69917CCB7CF009CB1B8 /* EJSharedOpenALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJSharedOpenALManager.m; sourceTree = "<group>"; };
 		A4B7D69A17CCB7CF009CB1B8 /* EJBindingBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingBase.h; sourceTree = "<group>"; };
 		A4B7D69B17CCB7CF009CB1B8 /* EJBindingBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingBase.m; sourceTree = "<group>"; };
 		A4B7D69C17CCB7CF009CB1B8 /* EJBindingEjectaCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingEjectaCore.h; sourceTree = "<group>"; };
@@ -436,9 +414,6 @@
 				A41AA32217CCBD67003DAE81 /* CoreText.framework in Frameworks */,
 				A41AA32017CCBD61003DAE81 /* CFNetwork.framework in Frameworks */,
 				A41AA31E17CCBD56003DAE81 /* OpenGLES.framework in Frameworks */,
-				A41AA32817CCBD88003DAE81 /* OpenAL.framework in Frameworks */,
-				A41AA31C17CCBD4E003DAE81 /* AVFoundation.framework in Frameworks */,
-				A41AA31A17CCBD4A003DAE81 /* AudioToolbox.framework in Frameworks */,
 				A41AA32C17CCBDBB003DAE81 /* libicucore.dylib in Frameworks */,
 				A41AA32A17CCBDB2003DAE81 /* libstdc++.dylib in Frameworks */,
 				A4B7D7E817CCB7CF009CB1B8 /* libJavaScriptCore.a in Frameworks */,
@@ -666,14 +641,11 @@
 			children = (
 				A41AA32B17CCBDBB003DAE81 /* libicucore.dylib */,
 				A41AA32917CCBDB2003DAE81 /* libstdc++.dylib */,
-				A41AA32717CCBD88003DAE81 /* OpenAL.framework */,
 				A41AA32517CCBD74003DAE81 /* SystemConfiguration.framework */,
 				A41AA32317CCBD6E003DAE81 /* QuartzCore.framework */,
 				A41AA32117CCBD67003DAE81 /* CoreText.framework */,
 				A41AA31F17CCBD61003DAE81 /* CFNetwork.framework */,
 				A41AA31D17CCBD56003DAE81 /* OpenGLES.framework */,
-				A41AA31B17CCBD4E003DAE81 /* AVFoundation.framework */,
-				A41AA31917CCBD4A003DAE81 /* AudioToolbox.framework */,
 				A4B7D63F17CCB679009CB1B8 /* UIKit.framework */,
 				A4B7D64117CCB679009CB1B8 /* Foundation.framework */,
 				A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */,
@@ -727,7 +699,6 @@
 		A4B7D68B17CCB7CF009CB1B8 /* Ejecta */ = {
 			isa = PBXGroup;
 			children = (
-				A4B7D68E17CCB7CF009CB1B8 /* EJAudio */,
 				A4B7D6A217CCB7CF009CB1B8 /* EJCanvas */,
 				A4B7D6F617CCB7CF009CB1B8 /* EJUtils */,
 				A4B7D69A17CCB7CF009CB1B8 /* EJBindingBase.h */,
@@ -751,24 +722,6 @@
 				A41AA31617CCBC8F003DAE81 /* Ejecta.js */,
 			);
 			path = Ejecta;
-			sourceTree = "<group>";
-		};
-		A4B7D68E17CCB7CF009CB1B8 /* EJAudio */ = {
-			isa = PBXGroup;
-			children = (
-				A4B7D68F17CCB7CF009CB1B8 /* EJAudioSource.h */,
-				A4B7D69017CCB7CF009CB1B8 /* EJAudioSourceAVAudio.h */,
-				A4B7D69117CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m */,
-				A4B7D69217CCB7CF009CB1B8 /* EJAudioSourceOpenAL.h */,
-				A4B7D69317CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m */,
-				A4B7D69417CCB7CF009CB1B8 /* EJBindingAudio.h */,
-				A4B7D69517CCB7CF009CB1B8 /* EJBindingAudio.m */,
-				A4B7D69617CCB7CF009CB1B8 /* EJOpenALBuffer.h */,
-				A4B7D69717CCB7CF009CB1B8 /* EJOpenALBuffer.m */,
-				A4B7D69817CCB7CF009CB1B8 /* EJSharedOpenALManager.h */,
-				A4B7D69917CCB7CF009CB1B8 /* EJSharedOpenALManager.m */,
-			);
-			path = EJAudio;
 			sourceTree = "<group>";
 		};
 		A4B7D6A217CCB7CF009CB1B8 /* EJCanvas */ = {
@@ -1083,11 +1036,6 @@
 				A4B7D7A617CCB7CF009CB1B8 /* main.m in Sources */,
 				A4B7D7A717CCB7CF009CB1B8 /* MainViewController.m in Sources */,
 				A41AA33417CCC15A003DAE81 /* LKView.m in Sources */,
-				A4B7D7A917CCB7CF009CB1B8 /* EJAudioSourceAVAudio.m in Sources */,
-				A4B7D7AA17CCB7CF009CB1B8 /* EJAudioSourceOpenAL.m in Sources */,
-				A4B7D7AB17CCB7CF009CB1B8 /* EJBindingAudio.m in Sources */,
-				A4B7D7AC17CCB7CF009CB1B8 /* EJOpenALBuffer.m in Sources */,
-				A4B7D7AD17CCB7CF009CB1B8 /* EJSharedOpenALManager.m in Sources */,
 				A4B7D7AE17CCB7CF009CB1B8 /* EJBindingBase.m in Sources */,
 				A4B7D7AF17CCB7CF009CB1B8 /* EJBindingEjectaCore.m in Sources */,
 				A4B7D7B017CCB7CF009CB1B8 /* EJBindingEventedBase.m in Sources */,
