@@ -13,8 +13,6 @@ static NSString * const kLKScriptsFolder = @"Scripts/";
 static NSString * const kLKLWFScript = @"lwf.js";
 static NSString * const kLKMainScript = @"main.js";
 
-static NSString * const kLKCallbackOnLoad = @"onload";
-
 @implementation LKView
 
 - (id)init
@@ -36,11 +34,16 @@ static NSString * const kLKCallbackOnLoad = @"onload";
     return self;
 }
 
+- (void)load:(NSString *)lwf completed:(void (^)())completed
+{
+    [self load:lwf prefix:nil completed:completed];
+}
+
 - (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed
 {
     NSString *path = [self pathForResource:kLKMainScript];
     NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSString *script = [NSString stringWithFormat:format, lwf, prefix];
+    NSString *script = [NSString stringWithFormat:format, lwf, prefix ? prefix : @""];
     [self evaluateScript:script sourceURL:kLKMainScript];
 }
 
@@ -55,13 +58,6 @@ static NSString * const kLKCallbackOnLoad = @"onload";
 }
 
 - (void)stop
-{
-    
-}
-
-#pragma mark - Private Methods
-
-- (void)callback:(NSString *)key
 {
     
 }

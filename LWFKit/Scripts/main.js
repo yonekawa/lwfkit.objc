@@ -26,7 +26,7 @@ stage.height = window.innerHeight;
 cache = LWF.ResourceCache.get();
 cache.loadLWF({
   lwf:    '%@',
-  prefix: '../App/%@/',
+  prefix: '../%@/',
   stage:  stage,
   onload: function(lwf) {
     window.lwfkit.lwf = lwf;

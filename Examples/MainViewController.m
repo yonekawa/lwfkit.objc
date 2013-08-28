@@ -21,7 +21,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
 
     LKView *lwf = [[LKView alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
-    [lwf load:@"example.lwf" prefix:@"example.lwfdata" completed:nil];
+    [lwf load:@"example.lwf" completed:nil];
     [self.view addSubview:lwf];
 }
 
