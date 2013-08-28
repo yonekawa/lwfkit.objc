@@ -6,9 +6,8 @@ LWFKit is a framework to using [LWF](https://github.com/gree/lwf) on your Object
 
   1. Import `LWFKit` directory into your project.
   2. Add linked frameworks and libraries   
-    `OpenGLES.framework`, `OpenAL.framework`, `CoreText.framework`,
-    `CFNetwork.framework`, `QuartzCore.framework` `AudioToolbox.framework`,
-    `AVFoundation.framework`, `SystemConfiguration.framework`,
+    `OpenGLES.framework`, `CoreText.framework`, `CFNetwork.framework`,
+    `QuartzCore.framework` `SystemConfiguration.framework`,
     `libstdc++.dylib`, `libicucore.dylib`, `LWFKit/Externals/libJavaScriptCore.a`
   3. Add files to Copy Bundle Resources  
     `LWFKit/Externals/Ejecta/EJCanvas/2D/Shaders/*`
