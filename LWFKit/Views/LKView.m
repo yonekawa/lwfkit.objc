@@ -12,6 +12,7 @@ static NSString * const kLKScriptsFolder = @"Scripts/";
 
 static NSString * const kLKLWFScript = @"lwf.js";
 static NSString * const kLKMainScript = @"main.js";
+static NSString * const kLKStopScript = @"stop.js";
 
 @implementation LKView
 
@@ -41,10 +42,7 @@ static NSString * const kLKMainScript = @"main.js";
 
 - (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed
 {
-    NSString *path = [self pathForResource:kLKMainScript];
-    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
-    NSString *script = [NSString stringWithFormat:format, lwf, prefix ? prefix : @""];
-    [self evaluateScript:script sourceURL:kLKMainScript];
+    [self evaluateScript:[self mainScriptForLWF:lwf prefix:prefix] sourceURL:kLKMainScript];
 }
 
 - (void)gotoAndPlayWithFrameLabel:(NSString *)label
@@ -59,7 +57,17 @@ static NSString * const kLKMainScript = @"main.js";
 
 - (void)stop
 {
-    
+    [self loadScriptAtPath:kLKStopScript];
+}
+
+#pragma mark - Private Methods
+
+- (NSString *)mainScriptForLWF:(NSString *)lwf prefix:(NSString *)prefix
+{
+    NSString *path = [self pathForResource:kLKMainScript];
+    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+
+    return [NSString stringWithFormat:format, lwf, prefix ? prefix : @""];
 }
 
 @end

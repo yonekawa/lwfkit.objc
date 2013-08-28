@@ -1,6 +1,3 @@
 [submodule "Tests/Externals/expecta"]
 	path = Tests/Externals/expecta
 	url = https://github.com/petejkim/expecta.git
-[submodule "expecta"]
-	path = expecta
-	url = https://github.com/petejkim/expecta.git

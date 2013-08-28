@@ -28,4 +28,23 @@
     expect(view.appFolder).to.equal(@"Scripts/");
 }
 
+- (void)testLoad
+{
+    id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
+
+    NSString *script = [lwfMock performSelector:@selector(mainScriptForLWF:prefix:) withObject:@"test" withObject:@""];
+    [[lwfMock expect] evaluateScript:script sourceURL:@"main.js"];
+    [lwfMock load:@"test" completed:nil];
+
+    [lwfMock verify];
+}
+
+- (void)testStop
+{
+    id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
+    [[lwfMock expect] loadScriptAtPath:@"stop.js"];
+    [lwfMock stop];
+    [lwfMock verify];
+}
+
 @end
