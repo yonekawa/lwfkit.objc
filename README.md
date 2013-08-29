@@ -35,9 +35,25 @@ LWFKit is a framework to using [LWF](https://github.com/gree/lwf) on your Object
 ### Timeline Control
 
 ```objc
+// Go to jump frame
 [lwf gotoAndPlayWithFrameLabel:@"jump"];
+
+// Go to frame of 10
 [lwf gotoAndPlayWithFrameLabel:10];
+
+// Stop timeline
 [lwf stop];
+```
+
+###  Event Handling
+
+You can receive notify from flash event by `fscommand`.
+
+```objc
+// Notify from fscommand('event', 'foo');
+[lwf addEventListener:@"foo", handler:^{
+    NSLog('foo fired').
+}];
 ```
 
 ## License
