@@ -22,10 +22,7 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.lwf = [[LKView alloc] initWithFrame:CGRectMake(0, 0, 100, 80)];
-    self.lwf.center = self.view.center;
-    self.lwf.frame = CGRectMake(self.lwf.frame.origin.x, self.lwf.frame.origin.y - 100, self.lwf.frame.size.width, self.lwf.frame.size.height);
-
+    self.lwf = [[LKView alloc] initWithFrame:CGRectMake(self.view.center.x - 50, self.view.center.y - 120, 100, 80)];
     [self.view addSubview:self.lwf];
 
     __block LKView *lwf = self.lwf;
