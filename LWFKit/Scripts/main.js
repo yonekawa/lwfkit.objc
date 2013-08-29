@@ -1,6 +1,8 @@
 var currentTime, fromTime, main, stage, cache;
 
 window.lwfkit = {};
+window.lwfkit.handlers = {};
+
 window.lwfkit.calcTick = function() {
   currentTime = Date.now() / 1000.0;
   var tick = currentTime - fromTime;
@@ -32,6 +34,6 @@ cache.loadLWF({
     window.lwfkit.lwf = lwf;
     lwf.scaleForWidth(window.innerWidth);
 
-    new Ejecta.LKBridge().notify('onload');
+    new Ejecta.LKBridge().loadComplete();
   }
 });

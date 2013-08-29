@@ -78,4 +78,38 @@
     [lwfMock verify];
 }
 
+- (void)testAddEventHandler
+{
+    NSString *event = @"event";
+    id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
+
+    NSString *path = [lwfMock pathForResource:@"add_event_handler.js"];
+    NSString *format = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *script = [NSString stringWithFormat:format, event];
+    [[lwfMock expect] evaluateScript:script sourceURL:@"add_event_handler.js"];
+    [lwfMock addEventHandler:event handler:^{}];
+    [lwfMock verify];
+
+    NSDictionary *eventHandlers = [lwfMock performSelector:@selector(eventHandlers)];
+
+    NSArray *handlers = [eventHandlers objectForKey:event];
+    expect(handlers).notTo.beNil();
+    expect([handlers count]).to.equal(1);
+}
+
+- (void)testRemoveEventHandler
+{
+    NSString *event = @"event";
+    id lwfMock = [OCMockObject partialMockForObject:[[LKView alloc] init]];
+
+    void (^handler)() = ^{};
+    [lwfMock addEventHandler:event handler:handler];
+    [lwfMock removeEventHandler:event handler:handler];
+
+    NSDictionary *eventHandlers = [lwfMock performSelector:@selector(eventHandlers)];
+    NSArray *handlers = [eventHandlers objectForKey:event];
+    expect(handlers).notTo.beNil();
+    expect([handlers count]).to.equal(0);
+}
+
 @end

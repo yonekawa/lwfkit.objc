@@ -15,9 +15,11 @@ static NSString * const kLKMainScript = @"main.js";
 static NSString * const kLKGotoAndPlayWithFrameNumberScript = @"goto_and_play_with_frame_number.js";
 static NSString * const kLKGotoAndPlayWithFrameLabelScript = @"goto_and_play_with_frame_label.js";
 static NSString * const kLKStopScript = @"stop.js";
+static NSString * const kLKAddEventHandlerScript = @"add_event_handler.js";
 
 @interface LKView()
-@property(nonatomic, strong) void (^onLoadBlock)();
+@property(strong) void (^loadCompletedBlock)();
+@property(strong) NSMutableDictionary *eventHandlers;
 @end
 
 @implementation LKView
@@ -36,6 +38,7 @@ static NSString * const kLKStopScript = @"stop.js";
 {
     self = [super initWithFrame:frame appFolder:folder];
     if (self) {
+        self.eventHandlers = [NSMutableDictionary dictionary];
         [self loadScriptAtPath:kLKLWFScript];
     }
     return self;
@@ -49,7 +52,7 @@ static NSString * const kLKStopScript = @"stop.js";
 - (void)load:(NSString *)lwf prefix:(NSString *)prefix completed:(void (^)())completed
 {
     if (completed) {
-        self.onLoadBlock = completed;
+        self.loadCompletedBlock = completed;
     }
     
     NSString *format = [self scriptFormatWithResourceName:kLKMainScript];
@@ -57,14 +60,10 @@ static NSString * const kLKStopScript = @"stop.js";
     [self evaluateScript:script sourceURL:kLKMainScript];
 }
 
-#pragma mark - Bridge Methods
-
-- (void)notify:(NSString *)event
+- (void)didLoadCompleted
 {
-    if ([event isEqualToString:@"onload"]) {
-        if (self.onLoadBlock) {
-            self.onLoadBlock();
-        }
+    if (self.loadCompletedBlock) {
+        self.loadCompletedBlock();
     }
 }
 
@@ -103,6 +102,39 @@ static NSString * const kLKStopScript = @"stop.js";
 {
     NSString *script = [NSString stringWithFormat:[self scriptFormatWithResourceName:kLKStopScript], instanceName];
     [self evaluateScript:script sourceURL:kLKStopScript];
+}
+
+#pragma mark - Event Handler Methods
+
+- (void)addEventHandler:(NSString *)event handler:(void (^)())handler
+{
+    NSString *script = [NSString stringWithFormat:[self scriptFormatWithResourceName:kLKAddEventHandlerScript], event];
+    [self evaluateScript:script sourceURL:kLKAddEventHandlerScript];
+
+    NSMutableArray *handlers = [self.eventHandlers objectForKey:event];
+    if (!handlers) {
+        handlers = [NSMutableArray array];
+        [self.eventHandlers setObject:handlers forKey:event];
+    }
+    [handlers addObject:handler];
+}
+
+- (void)removeEventHandler:(NSString *)event handler:(void (^)())handler
+{
+    NSMutableArray *handlers = [self.eventHandlers objectForKey:event];
+    if (handlers) {
+        [handlers removeObject:handler];
+    }
+}
+
+- (void)notify:(NSString *)event
+{
+    NSArray *handlers = [self.eventHandlers objectForKey:event];
+    if (handlers) {
+        for (void (^handler)() in handlers) {
+            handler();
+        }
+    }
 }
 
 #pragma mark - Private Methods

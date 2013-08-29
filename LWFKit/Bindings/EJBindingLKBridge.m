@@ -11,6 +11,11 @@
 
 @implementation EJBindingLKBridge
 
+EJ_BIND_FUNCTION(loadComplete, ctx, argc, argv) {
+    [((LKView *)scriptView) didLoadCompleted];
+	return NULL;
+}
+
 EJ_BIND_FUNCTION(notify, ctx, argc, argv) {
     if( argc < 1 ) { return NULL; }
 
