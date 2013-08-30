@@ -57,7 +57,6 @@
 		A41AA33D17CCC49B003DAE81 /* libJavaScriptCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */; };
 		A41AA34417CCCA3D003DAE81 /* Scripts in Resources */ = {isa = PBXBuildFile; fileRef = A41AA34317CCCA3D003DAE81 /* Scripts */; };
 		A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		A41AA35417CDBA24003DAE81 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = A41AA35217CDBA24003DAE81 /* base64.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A41AA38017CDDA2D003DAE81 /* example.lwf in Resources */ = {isa = PBXBuildFile; fileRef = A41AA36E17CDDA2D003DAE81 /* example.lwf */; };
 		A41AA38117CDDA2D003DAE81 /* example_0.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA36F17CDDA2D003DAE81 /* example_0.png */; };
 		A41AA38217CDDA2D003DAE81 /* example_1.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA37017CDDA2D003DAE81 /* example_1.png */; };
@@ -93,6 +92,7 @@
 		A41AA4C417CE0A13003DAE81 /* example_31.png in Resources */ = {isa = PBXBuildFile; fileRef = A41AA4B617CE0A13003DAE81 /* example_31.png */; };
 		A41AA4C717CE12C9003DAE81 /* EJBindingLKBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA4C617CE12C9003DAE81 /* EJBindingLKBridge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		A41AA4C817CE12C9003DAE81 /* EJBindingLKBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = A41AA4C617CE12C9003DAE81 /* EJBindingLKBridge.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A498DD6617D0828000731616 /* base64.c in Sources */ = {isa = PBXBuildFile; fileRef = A498DD6417D0828000731616 /* base64.c */; };
 		A4B7D64017CCB679009CB1B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D63F17CCB679009CB1B8 /* UIKit.framework */; };
 		A4B7D64217CCB679009CB1B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64117CCB679009CB1B8 /* Foundation.framework */; };
 		A4B7D64417CCB679009CB1B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7D64317CCB679009CB1B8 /* CoreGraphics.framework */; };
@@ -236,8 +236,6 @@
 		A41AA34317CCCA3D003DAE81 /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
 		A41AA34517CCD0C4003DAE81 /* EJBindingLocalStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLocalStorage.h; sourceTree = "<group>"; };
 		A41AA34617CCD0C4003DAE81 /* EJBindingLocalStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLocalStorage.m; sourceTree = "<group>"; };
-		A41AA35217CDBA24003DAE81 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = base64.c; path = SocketRocket/base64.c; sourceTree = "<group>"; };
-		A41AA35317CDBA24003DAE81 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = base64.h; path = SocketRocket/base64.h; sourceTree = "<group>"; };
 		A41AA36E17CDDA2D003DAE81 /* example.lwf */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.lwf; sourceTree = "<group>"; };
 		A41AA36F17CDDA2D003DAE81 /* example_0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_0.png; sourceTree = "<group>"; };
 		A41AA37017CDDA2D003DAE81 /* example_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_1.png; sourceTree = "<group>"; };
@@ -279,6 +277,8 @@
 		A41AA4B617CE0A13003DAE81 /* example_31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = example_31.png; sourceTree = "<group>"; };
 		A41AA4C517CE12C9003DAE81 /* EJBindingLKBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EJBindingLKBridge.h; sourceTree = "<group>"; };
 		A41AA4C617CE12C9003DAE81 /* EJBindingLKBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EJBindingLKBridge.m; sourceTree = "<group>"; };
+		A498DD6417D0828000731616 /* base64.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = base64.c; sourceTree = "<group>"; };
+		A498DD6517D0828000731616 /* base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = base64.h; sourceTree = "<group>"; };
 		A4B7D63C17CCB679009CB1B8 /* Examples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B7D63F17CCB679009CB1B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4B7D64117CCB679009CB1B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -689,8 +689,8 @@
 			children = (
 				A4B7D68B17CCB7CF009CB1B8 /* Ejecta */,
 				A4B7D71017CCB7CF009CB1B8 /* JavaScriptCore */,
-				A41AA35217CDBA24003DAE81 /* base64.c */,
-				A41AA35317CDBA24003DAE81 /* base64.h */,
+				A498DD6417D0828000731616 /* base64.c */,
+				A498DD6517D0828000731616 /* base64.h */,
 				A4B7D71B17CCB7CF009CB1B8 /* libJavaScriptCore.a */,
 			);
 			path = Externals;
@@ -1076,8 +1076,8 @@
 				A4B7D7DB17CCB7CF009CB1B8 /* EJTimer.m in Sources */,
 				A4B7D7DF17CCB7CF009CB1B8 /* EJBindingHttpRequest.m in Sources */,
 				A41AA34717CCD0C4003DAE81 /* EJBindingLocalStorage.m in Sources */,
-				A41AA35417CDBA24003DAE81 /* base64.c in Sources */,
 				A41AA4C717CE12C9003DAE81 /* EJBindingLKBridge.m in Sources */,
+				A498DD6617D0828000731616 /* base64.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
