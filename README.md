@@ -52,7 +52,7 @@ You can receive notify from flash event by `fscommand`.
 ```objc
 // Notify from fscommand('event', 'foo');
 [lwf addEventListener:@"foo", handler:^{
-    NSLog('foo fired').
+    NSLog(@"foo fired").
 }];
 ```
 
