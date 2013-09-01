@@ -4,6 +4,13 @@ LWFKit is a framework to using [LWF](https://github.com/gree/lwf) on your Object
 
 ## Setup
 
+### CocoaPods
+
+  1. Add `LWFkit` into your `Podfile`
+  2. `pod install`
+
+### Manually
+
   1. Import `LWFKit` directory into your project.
   2. Add linked frameworks and libraries   
     `OpenGLES.framework`, `CoreText.framework`, `CFNetwork.framework`,
