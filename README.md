@@ -36,6 +36,11 @@ LWFKit is a framework to using [LWF](https://github.com/gree/lwf) on your Object
         NSLog(@"loaded");
     }];
     [self.view addSubView:lwf];
+
+    // load with data prefix
+    [lwf load:@"example.lwf" prefix:@"data/example.lwfdata" completed:^ {
+        NSLog(@"loaded");
+    }];
 }
 ```
 
