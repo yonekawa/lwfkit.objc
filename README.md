@@ -31,7 +31,7 @@ LWFKit is a framework to using [LWF](https://github.com/gree/lwf) on your Object
 {
     [super viewDidLoad];
 
-    LKView *lwf = [[LWView alloc] initWithFrame:CGRectMake(0, 0, 100, 80)];
+    LKView *lwf = [[LKView alloc] initWithFrame:CGRectMake(0, 0, 100, 80)];
     [lwf load:@"example.lwf" completed:^ {
         NSLog(@"loaded");
     }];
@@ -58,7 +58,7 @@ You can receive notify from flash event by `fscommand`.
 
 ```objc
 // Notify from fscommand('event', 'foo');
-[lwf addEventListener:@"foo", handler:^{
+[lwf addEventHandler:@"foo", handler:^{
     NSLog(@"foo fired").
 }];
 ```
